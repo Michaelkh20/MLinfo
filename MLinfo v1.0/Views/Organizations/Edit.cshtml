@@ -1,0 +1,46 @@
+﻿@model MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Organization</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="@Model.OrganizationDB.ID" />
+            <div class="form-group">
+                <label asp-for="@Model.OrganizationDB.NameE" class="form-label mt-2"></label>
+                <input asp-for="@Model.OrganizationDB.NameE" class="form-control" />
+                <span asp-validation-for="@Model.OrganizationDB.NameE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.OrganizationDB.NameR" class="form-label mt-2"></label>
+                <input asp-for="@Model.OrganizationDB.NameR" class="form-control" />
+                <span asp-validation-for="@Model.OrganizationDB.NameR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedCountryId" class="form-label mt-2">Country</label>
+                <select class="form-select" asp-for="SelectedCountryId" asp-items="@Model.Countries">
+                    <option>Select country</option>
+                </select>
+                <span asp-validation-for="SelectedCountryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary mt-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-outline-secondary mt-3">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MLinfo_v1._0.Models.Country>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Countries List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Countries" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp; Create new Country
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.NameE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NameR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Organizations)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var country in Model)
+            {
+                <tr>
+                    <td>
+                        @country.NameE
+                    </td>
+                    <td>
+                        @country.NameR
+                    </td>
+                    <td>
+                        @country.OrganizationsToString()
+                    </td>
+                    <td>
+                        <div class="w-75 btn-group" role="group">
+                            <a asp-controller="Countries" asp-action="Details" asp-route-id="@country.ID"
+                           class="btn btn-info mx-2"> <i class="bi bi-x-square"></i> Details</a>
+                            <a asp-controller="Countries" asp-action="Edit" asp-route-id="@country.ID"
+                           class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                            <a asp-controller="Countries" asp-action="Delete" asp-route-id="@country.ID"
+                           class="btn btn-danger mx-2"> <i class="bi bi-x-square"></i> Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,38 @@
+﻿@model MLinfo_v1._0.Models.Keyword
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Keyword</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="KeywordE" class="form-label mt-2"></label>
+                <input asp-for="KeywordE" class="form-control" />
+                <span asp-validation-for="KeywordE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KeywordR" class="form-label mt-2"></label>
+                <input asp-for="KeywordR" class="form-control" />
+                <span asp-validation-for="KeywordR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary mt-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-outline-secondary mt-3">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

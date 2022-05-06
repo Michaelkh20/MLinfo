@@ -1,0 +1,39 @@
+﻿@model MLinfo_v1._0.Models.MLMethod
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MLMethod</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="NameE" class="form-label mt-2"></label>
+                <input asp-for="NameE" class="form-control" />
+                <span asp-validation-for="NameE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameR" class="form-label mt-2"></label>
+                <input asp-for="NameR" class="form-control" />
+                <span asp-validation-for="NameR" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary mt-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-outline-secondary mt-3">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

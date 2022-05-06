@@ -1,0 +1,124 @@
+﻿@model IEnumerable<MLinfo_v1._0.Models.Article>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Articles List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Articles" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-square"></i> &nbsp; Create new Article
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <table class="table table-bordered table-striped" style="width:150%">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Language)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Authors)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SecondaryArticle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Year)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Source)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Volume)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Issue)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Pages)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DOI)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Methods)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Keywords)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PDFfile)
+                </th>
+                <th />
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model)
+            {
+                <tr>
+                    <td>
+                        @article.Title
+                    </td>
+                    <td>
+                        @article.Language.NameE
+                    </td>
+                    <td>
+                        @article.AuthorsToString()
+                    </td>
+                    <td>
+                        @article.SecondaryArticleToString()
+                    </td>
+                    <td>
+                        @article.Year
+                    </td>
+                    <td>
+                        @article.Source
+                    </td>
+                    <td>
+                        @article.Volume
+                    </td>
+                    <td>
+                        @article.Issue
+                    </td>
+                    <td>
+                        @article.Pages
+                    </td>
+                    <td>
+                        @article.DOI
+                    </td>
+                    <td>
+                        @article.MethodsToString()
+                    </td>
+                    <td>
+                        @article.KeywordsToString()
+                    </td>
+                    <td>
+                        @article.PDFfile
+                    </td>
+                    <td>
+                        <div class="w-75 btn-group" role="group">
+                            <a asp-controller="Articles" asp-action="Details" asp-route-id="@article.ID"
+                           class="btn btn-info mx-2"> <i class="bi bi-x-square"></i> Details</a>
+                            <a asp-controller="Articles" asp-action="Edit" asp-route-id="@article.ID"
+                           class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                            <a asp-controller="Articles" asp-action="Delete" asp-route-id="@article.ID"
+                           class="btn btn-danger mx-2"> <i class="bi bi-x-square"></i> Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

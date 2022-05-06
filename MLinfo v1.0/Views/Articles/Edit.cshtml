@@ -1,0 +1,101 @@
+﻿@model MLinfo_v1._0.Models.ViewModels.ArticleSelectModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Article</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="@Model.ArticleDB.ID" />
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Title" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Title" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedLangId" class="form-label mt-2">Language</label>
+                <select class="form-select" asp-for="SelectedLangId" asp-items="@Model.Languages">
+                    <option>Select language</option>
+                </select>
+                <span asp-validation-for="SelectedLangId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedAuthorIds" class="form-label mt-2">Authors</label>
+                <select class="form-select" multiple="multiple" asp-for="SelectedAuthorIds" asp-items="@Model.Authors"></select>
+                <span asp-validation-for="SelectedAuthorIds" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedScArticleId" class="form-label mt-2">Authors</label>
+                <select class="form-select" asp-for="SelectedScArticleId" asp-items="@Model.SecondaryArticles"></select>
+                <span asp-validation-for="SelectedScArticleId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Year" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Year" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Source" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Source" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Source" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Volume" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Volume" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Volume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Issue" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Issue" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Issue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Pages" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Pages" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Pages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.DOI" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.DOI" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.DOI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.Comment" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.Comment" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.Comment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedMethodIds" class="form-label mt-2">Method</label>
+                <select class="form-select" multiple="multiple" asp-for="SelectedMethodIds" asp-items="@Model.Methods"></select>
+                <span asp-validation-for="SelectedMethodIds" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SelectedKeywordIds" class="form-label mt-2">Keywords</label>
+                <select class="form-select" multiple="multiple" asp-for="SelectedKeywordIds" asp-items="@Model.Keywords"></select>
+                <span asp-validation-for="SelectedKeywordIds" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ArticleDB.PDFfile" class="form-label mt-2"></label>
+                <input asp-for="@Model.ArticleDB.PDFfile" class="form-control" />
+                <span asp-validation-for="@Model.ArticleDB.PDFfile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary mt-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-outline-secondary mt-3">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
