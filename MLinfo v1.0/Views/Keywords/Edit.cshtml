@@ -1,4 +1,5 @@
-﻿@model MLinfo_v1._0.Models.Keyword
+﻿@using MLinfo_v1._0.Models.DatabasedModels
+@model Keyword
 
 @{
     ViewData["Title"] = "Edit";
@@ -13,7 +14,7 @@
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ID" />
-             <div class="form-group">
+            <div class="form-group">
                 <label asp-for="KeywordE" class="form-label mt-2"></label>
                 <input asp-for="KeywordE" class="form-control" />
                 <span asp-validation-for="KeywordE" class="text-danger"></span>
@@ -35,5 +36,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
 }

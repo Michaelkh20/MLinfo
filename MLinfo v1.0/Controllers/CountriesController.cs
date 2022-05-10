@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MLinfo_v1._0.Data;
-using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DatabasedModels;
+//using MLinfo_v1._0.Models.DBModels;
 
 namespace MLinfo_v1._0.Controllers
 {
@@ -23,7 +24,7 @@ namespace MLinfo_v1._0.Controllers
         // GET: Countries
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Countries.Include(country => country.Organizations).ToListAsync());
+            return View(await _context.CountriesInfos.Include(country => country.Organizations).ToListAsync());
         }
 
         // GET: Countries/Details/5
@@ -59,7 +60,7 @@ namespace MLinfo_v1._0.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Countries.Add(country);
+                _context.CountriesInfos.Add(country);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -141,19 +142,19 @@ namespace MLinfo_v1._0.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var country = await GetCountryFromDB(id);
-            _context.Countries.Remove(country);
+            _context.CountriesInfos.Remove(country);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CountryExists(int id)
         {
-            return _context.Countries.Any(e => e.ID == id);
+            return _context.CountriesInfos.Any(e => e.ID == id);
         }
 
         private async Task<Country> GetCountryFromDB(int? id)
         {
-            return await _context.Countries.Include(country => country.Organizations)
+            return await _context.CountriesInfos.Include(country => country.Organizations)
                 .FirstOrDefaultAsync(m => m.ID == id);
         }
     }

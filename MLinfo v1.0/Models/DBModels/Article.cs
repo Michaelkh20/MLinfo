@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using MLinfo_v1._0.Models.ViewModels;
 using System.ComponentModel.DataAnnotations;
 
-namespace MLinfo_v1._0.Models;
+namespace MLinfo_v1._0.Models.DBModels;
 
 public class Article
 {
@@ -51,21 +51,21 @@ public class Article
 
     public string AuthorsToString()
     {
-        return (Authors.Count == 0) ? "---" : string.Join(", ", Authors.Select(x => x.NameE));
+        return Authors.Count == 0 ? "---" : string.Join(", ", Authors.Select(x => x.NameE));
     }
 
     public string MethodsToString()
     {
-        return (Methods!.Count == 0) ? "---" : string.Join(", ", Methods.Select(x => x.NameE));
+        return Methods!.Count == 0 ? "---" : string.Join(", ", Methods.Select(x => x.NameE));
     }
 
     public string KeywordsToString()
     {
-        return (Keywords!.Count == 0) ? "---" : string.Join(", ", Keywords.Select(x => x.KeywordE));
+        return Keywords!.Count == 0 ? "---" : string.Join(", ", Keywords.Select(x => x.KeywordE));
     }
 
     public string SecondaryArticleToString()
     {
-        return (SecondaryArticle == null) ? "---" : SecondaryArticle.Title;
+        return SecondaryArticle == null ? "---" : SecondaryArticle.Title;
     }
 }

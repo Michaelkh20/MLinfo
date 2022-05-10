@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MLinfo_v1._0.Data;
-using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DatabasedModels;
+//using MLinfo_v1._0.Models.DBModels;
 
 namespace MLinfo_v1._0.Controllers
 {
@@ -23,7 +24,7 @@ namespace MLinfo_v1._0.Controllers
         // GET: MLMethods
         public async Task<IActionResult> Index()
         {
-            return View(await _context.MlMethods.Include(method => method.Articles).ToListAsync());
+            return View(await _context.MethodMlinfos.Include(method => method.Articles).ToListAsync());
         }
 
         // GET: MLMethods/Details/5
@@ -59,7 +60,7 @@ namespace MLinfo_v1._0.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.MlMethods.Add(method);
+                _context.MethodMlinfos.Add(method);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -98,7 +99,7 @@ namespace MLinfo_v1._0.Controllers
             {
                 try
                 {
-                    _context.MlMethods.Update(method);
+                    _context.MethodMlinfos.Update(method);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -140,19 +141,19 @@ namespace MLinfo_v1._0.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var method = await GetMethodFromDB(id);
-            _context.MlMethods.Remove(method);
+            _context.MethodMlinfos.Remove(method);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MLMethodExists(int id)
         {
-            return _context.MlMethods.Any(e => e.ID == id);
+            return _context.MethodMlinfos.Any(e => e.ID == id);
         }
 
         private async Task<MLMethod> GetMethodFromDB(int? id)
         {
-            return await _context.MlMethods.Include(method => method.Articles)
+            return await _context.MethodMlinfos.Include(method => method.Articles)
                 .FirstOrDefaultAsync(m => m.ID == id);
         }
     }

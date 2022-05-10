@@ -7,10 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MLinfo_v1._0.Data;
-using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DatabasedModels;
+//using MLinfo_v1._0.Models.DBModels;
 
 namespace MLinfo_v1._0.Controllers
 {
+    /// <summary>
+    /// something
+    /// </summary>
     public class KeywordsController : Controller
     {
         private readonly ApplicationDBContext _context;
@@ -23,7 +27,7 @@ namespace MLinfo_v1._0.Controllers
         // GET: Keywords
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Keywords.Include(keyword => keyword.Articles).ToListAsync());
+            return View(await _context.KeywordsInfos.Include(keyword => keyword.Articles).ToListAsync());
         }
 
         // GET: Keywords/Details/5
@@ -59,7 +63,7 @@ namespace MLinfo_v1._0.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Keywords.Add(keyword);
+                _context.KeywordsInfos.Add(keyword);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -99,7 +103,7 @@ namespace MLinfo_v1._0.Controllers
             {
                 try
                 {
-                    _context.Keywords.Update(keyword);
+                    _context.KeywordsInfos.Update(keyword);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -141,19 +145,19 @@ namespace MLinfo_v1._0.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var keyword = await GetKeywordFromDB(id);
-            _context.Keywords.Remove(keyword);
+            _context.KeywordsInfos.Remove(keyword);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool KeywordExists(int id)
         {
-            return _context.Keywords.Any(e => e.ID == id);
+            return _context.KeywordsInfos.Any(e => e.ID == id);
         }
 
         private async Task<Keyword> GetKeywordFromDB(int? id)
         {
-            return await _context.Keywords.Include(keyword => keyword.Articles)
+            return await _context.KeywordsInfos.Include(keyword => keyword.Articles)
                 .FirstOrDefaultAsync(m => m.ID == id);
         }
     }

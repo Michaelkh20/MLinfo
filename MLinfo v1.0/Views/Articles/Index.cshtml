@@ -1,4 +1,5 @@
-﻿@model IEnumerable<MLinfo_v1._0.Models.Article>
+﻿@using MLinfo_v1._0.Models.DatabasedModels
+@model IEnumerable<Article>
 
 @{
     ViewData["Title"] = "Index";
@@ -18,47 +19,56 @@
     <br />
     <br />
 
-    <table class="table table-bordered table-striped" style="width:150%">
+    <table class="table table-bordered table-striped" style="width:100%">
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Title)
+                    @Html.DisplayNameFor(model => model.TitleE)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Language)
+                    @Html.DisplayNameFor(model => model.TitleR)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Authors)
+                    @Html.DisplayNameFor(model => model.AuthorsE)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.SecondaryArticle)
+                    @Html.DisplayNameFor(model => model.AuthorsR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SourceE)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SourceR)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Year)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Source)
+                    @Html.DisplayNameFor(model => model.VolumeE)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Volume)
+                    @Html.DisplayNameFor(model => model.VolumeR)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Issue)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Pages)
+                    @Html.DisplayNameFor(model => model.PagesE)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.DOI)
+                    @Html.DisplayNameFor(model => model.PagesR)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Doie)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Doir)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Methods)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Keywords)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.PDFfile)
                 </th>
                 <th />
             </tr>
@@ -68,43 +78,52 @@
             {
                 <tr>
                     <td>
-                        @article.Title
+                        @article.TitleE
                     </td>
                     <td>
-                        @article.Language.NameE
+                        @article.TitleR
                     </td>
                     <td>
-                        @article.AuthorsToString()
+                        @article.AuthorsE
                     </td>
                     <td>
-                        @article.SecondaryArticleToString()
+                        @article.AuthorsR
+                    </td>
+                    <td>
+                        @article.SourceE
+                    </td>
+                    <td>
+                        @article.SourceR
                     </td>
                     <td>
                         @article.Year
                     </td>
                     <td>
-                        @article.Source
+                        @article.VolumeE
                     </td>
                     <td>
-                        @article.Volume
+                        @article.VolumeR
                     </td>
                     <td>
                         @article.Issue
                     </td>
                     <td>
-                        @article.Pages
+                        @article.PagesE
                     </td>
                     <td>
-                        @article.DOI
+                        @article.PagesR
+                    </td>
+                    <td>
+                        @article.Doie
+                    </td>
+                    <td>
+                        @article.Doir
                     </td>
                     <td>
                         @article.MethodsToString()
                     </td>
                     <td>
                         @article.KeywordsToString()
-                    </td>
-                    <td>
-                        @article.PDFfile
                     </td>
                     <td>
                         <div class="w-75 btn-group" role="group">

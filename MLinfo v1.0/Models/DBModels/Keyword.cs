@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace MLinfo_v1._0.Models;
+namespace MLinfo_v1._0.Models.DBModels;
 
 public class Keyword
 {
@@ -20,6 +20,6 @@ public class Keyword
 
     public string ArticlesToString()
     {
-        return (Articles.Count == 0) ? "---" : string.Join(", ", Articles.Select(article => article.Title));
+        return Articles.Count == 0 ? "---" : string.Join(", ", Articles.Select(article => article.Title));
     }
 }

@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MLinfo_v1._0.Data;
-using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DatabasedModels;
+//using MLinfo_v1._0.Models.DBModels;
 using MLinfo_v1._0.Models.ViewModels;
 
 namespace MLinfo_v1._0.Controllers
@@ -24,7 +25,7 @@ namespace MLinfo_v1._0.Controllers
         // GET: Authors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Authors.Include(author => author.Articles).Include(author => author.Organizations).ToListAsync());
+            return View(await _context.AuthorsInfos.Include(author => author.Articles).Include(author => author.Organizations).ToListAsync());
         }
 
         // GET: Authors/Details/5
@@ -65,7 +66,7 @@ namespace MLinfo_v1._0.Controllers
 
                 FillAuthorCollectionsDB(author, authorSM);
 
-                _context.Authors.Add(author);
+                _context.AuthorsInfos.Add(author);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -116,7 +117,7 @@ namespace MLinfo_v1._0.Controllers
 
                     FillAuthorCollectionsDB(author, authorSM);
 
-                    _context.Authors.Update(author);
+                    _context.AuthorsInfos.Update(author);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -160,30 +161,30 @@ namespace MLinfo_v1._0.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var author = await GetAuthorFromDB(id);
-            _context.Authors.Remove(author);
+            _context.AuthorsInfos.Remove(author);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool AuthorExists(int id)
         {
-            return _context.Authors.Any(e => e.ID == id);
+            return _context.AuthorsInfos.Any(e => e.ID == id);
         }
         private void PopulateAuthorSM(AuthorSelectModel authorSM)
         {
-            authorSM.Organizations = _context.Organizations.Select(org => new SelectListItem() { Text = org.NameE, Value = org.ID.ToString() }).ToList();
+            authorSM.Organizations = _context.OrganizationsInfos.Select(org => new SelectListItem() { Text = org.NameE, Value = org.ID.ToString() }).ToList();
         }
 
         private async Task<Author> GetAuthorFromDB(int? id)
         {
-            return await _context.Authors.Include(author => author.Articles).Include(author => author.Organizations).
+            return await _context.AuthorsInfos.Include(author => author.Articles).Include(author => author.Organizations).
                             FirstOrDefaultAsync(author => author.ID == id);
         }
 
 
         private void FillAuthorCollectionsDB(Author author, AuthorSelectModel authorSM)
         {
-            author.Organizations = (from org in _context.Organizations.ToList()
+            author.Organizations = (from org in _context.OrganizationsInfos.ToList()
                                     join orgId in authorSM.SelectedOrgIds on org.ID equals orgId
                                     select org).ToList();
         }

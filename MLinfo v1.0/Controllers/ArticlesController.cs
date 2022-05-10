@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MLinfo_v1._0.Data;
-using MLinfo_v1._0.Models;
+//using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DatabasedModels;
 using MLinfo_v1._0.Models.ViewModels;
 
 namespace MLinfo_v1._0.Controllers
@@ -24,7 +25,7 @@ namespace MLinfo_v1._0.Controllers
         // GET: Articles
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Articles.Include(article => article.Language).Include(article => article.SecondaryArticle).
+            return View(await _context.ReferencesInfos.
                             Include(article => article.Authors).Include(article => article.Methods).Include(article => article.Keywords).ToListAsync());
         }
 
@@ -64,7 +65,7 @@ namespace MLinfo_v1._0.Controllers
 
                 FillArticleCollectionsDB(article, articleSM);
 
-                _context.Articles.Add(article);
+                _context.ReferencesInfos.Add(article);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -113,7 +114,7 @@ namespace MLinfo_v1._0.Controllers
 
                     FillArticleCollectionsDB(article, articleSM);
 
-                    _context.Articles.Update(article);
+                    _context.ReferencesInfos.Update(article);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -157,43 +158,39 @@ namespace MLinfo_v1._0.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var article = await GetArticleFromDB(id);
-            _context.Articles.Remove(article);
+            _context.ReferencesInfos.Remove(article);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ArticleExists(int id)
         {
-            return _context.Articles.Any(e => e.ID == id);
+            return _context.ReferencesInfos.Any(e => e.ID == id);
         }
 
         private void PopulatearticleSM(ArticleSelectModel articleSM)
         {
-            articleSM.Languages = _context.Languages.Select(language => new SelectListItem() { Text = language.NameE, Value = language.ID.ToString() }).ToList();
-            articleSM.SecondaryArticles = _context.Articles.Select(article => new SelectListItem() { Text = article.Title, Value = article.ID.ToString() }).ToList();
-            articleSM.Authors = _context.Authors.Select(author => new SelectListItem() { Text = author.NameE, Value = author.ID.ToString() }).ToList();
-            articleSM.Methods = _context.MlMethods.Select(method => new SelectListItem() { Text = method.NameE, Value = method.ID.ToString() }).ToList();
-            articleSM.Keywords = _context.Keywords.Select(keyword => new SelectListItem() { Text = keyword.KeywordE, Value = keyword.ID.ToString() }).ToList();
+            articleSM.Authors = _context.AuthorsInfos.Select(author => new SelectListItem() { Text = author.NameE, Value = author.ID.ToString() }).ToList();
+            articleSM.Methods = _context.MethodMlinfos.Select(method => new SelectListItem() { Text = method.NameE, Value = method.ID.ToString() }).ToList();
+            articleSM.Keywords = _context.KeywordsInfos.Select(keyword => new SelectListItem() { Text = keyword.KeywordE, Value = keyword.ID.ToString() }).ToList();
         }
 
         private void FillArticleCollectionsDB(Article article, ArticleSelectModel articleSM)
         {
-            article.Language = _context.Languages.Find(articleSM.SelectedLangId);
-            article.Authors = (from author in _context.Authors.ToList()
+            article.Authors = (from author in _context.AuthorsInfos.ToList()
                                join authorId in articleSM.SelectedAuthorIds on author.ID equals authorId
                                select author).ToList();
-            article.Methods = (from method in _context.MlMethods.ToList()
+            article.Methods = (from method in _context.MethodMlinfos.ToList()
                                join methodId in articleSM.SelectedMethodIds on method.ID equals methodId
                                select method).ToList();
-            article.Keywords = (from keyword in _context.Keywords.ToList()
+            article.Keywords = (from keyword in _context.KeywordsInfos.ToList()
                                 join keywordId in articleSM.SelectedKeywordIds on keyword.ID equals keywordId
                                 select keyword).ToList();
-            article.SecondaryArticle = (articleSM.SelectedScArticleId != -1) ? _context.Articles.Find(articleSM.SelectedScArticleId) : null;
         }
 
         private async Task<Article> GetArticleFromDB(int? id)
         {
-            return await _context.Articles.Include(article => article.Language).Include(article => article.SecondaryArticle).
+            return await _context.ReferencesInfos.
                             Include(article => article.Authors).Include(article => article.Methods).Include(article => article.Keywords).
                             FirstOrDefaultAsync(article => article.ID == id);
         }

@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MLinfo_v1._0.Data;
-using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DatabasedModels;
+//using MLinfo_v1._0.Models.DBModels;
 using MLinfo_v1._0.Models.ViewModels;
 
 namespace MLinfo_v1._0.Controllers
@@ -24,7 +25,7 @@ namespace MLinfo_v1._0.Controllers
         // GET: Organizations
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Organizations.Include(org => org.Country).Include(org => org.Authors).ToListAsync());
+            return View(await _context.OrganizationsInfos.Include(org => org.Country).Include(org => org.Authors).ToListAsync());
         }
 
         // GET: Organizations/Details/5
@@ -115,7 +116,7 @@ namespace MLinfo_v1._0.Controllers
 
                     FillOrganizationCollectionsDB(org, orgSM);
 
-                    _context.Organizations.Update(org);
+                    _context.OrganizationsInfos.Update(org);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -159,31 +160,31 @@ namespace MLinfo_v1._0.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var organization = await GetOrganizationFromDB(id);
-            _context.Organizations.Remove(organization);
+            _context.OrganizationsInfos.Remove(organization);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool OrganizationExists(int id)
         {
-            return _context.Organizations.Any(e => e.ID == id);
+            return _context.OrganizationsInfos.Any(e => e.ID == id);
         }
 
         private void PopulateOrganizationSM(OrganizationSelectModel orgSM)
         {
-            orgSM.Countries = _context.Countries.Select(country => new SelectListItem() { Text = country.NameE, Value = country.ID.ToString() }).ToList();
+            orgSM.Countries = _context.CountriesInfos.Select(country => new SelectListItem() { Text = country.NameE, Value = country.ID.ToString() }).ToList();
         }
 
         private async Task<Organization> GetOrganizationFromDB(int? id)
         {
-            return await _context.Organizations.Include(org => org.Country).Include(org => org.Authors).
+            return await _context.OrganizationsInfos.Include(org => org.Country).Include(org => org.Authors).
                             FirstOrDefaultAsync(org => org.ID == id);
         }
 
 
         private void FillOrganizationCollectionsDB(Organization org, OrganizationSelectModel orgSM)
         {
-            org.Country = (orgSM.SelectedCountryId != -1) ? _context.Countries.Find(orgSM.SelectedCountryId) : null;
+            org.Country = (orgSM.OrganizationDB.CountryId != -1) ? _context.CountriesInfos.Find(orgSM.OrganizationDB.CountryId) : null;
         }
     }
 }

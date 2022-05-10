@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace MLinfo_v1._0.Models;
+namespace MLinfo_v1._0.Models.DBModels;
 
 public class Country
 {
@@ -20,6 +20,6 @@ public class Country
 
     public string OrganizationsToString()
     {
-        return (Organizations.Count == 0) ? "---" : string.Join(", ", Organizations.Select(x => x.NameE));
+        return Organizations.Count == 0 ? "---" : string.Join(", ", Organizations.Select(x => x.NameE));
     }
 }

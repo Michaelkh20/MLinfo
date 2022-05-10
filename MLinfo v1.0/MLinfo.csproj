@@ -8,6 +8,22 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Models\DBModels\**" />
+      <Compile Remove="Views\Languages\**" />
+      <Content Remove="Models\DBModels\**" />
+      <Content Remove="Views\Languages\**" />
+      <EmbeddedResource Remove="Models\DBModels\**" />
+      <EmbeddedResource Remove="Views\Languages\**" />
+      <None Remove="Models\DBModels\**" />
+      <None Remove="Views\Languages\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\LanguagesController.cs" />
+      <Compile Remove="Data\ApplicationDBContext.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">

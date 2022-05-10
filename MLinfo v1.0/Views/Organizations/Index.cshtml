@@ -1,4 +1,5 @@
-﻿@model IEnumerable<MLinfo_v1._0.Models.Organization>
+﻿@using MLinfo_v1._0.Models.DatabasedModels
+@model IEnumerable<Organization>
 
 @{
     ViewData["Title"] = "Index";
@@ -47,7 +48,7 @@
                         @org.NameR
                     </td>
                     <td>
-                        @org.Country.NameE
+                        @org.Country?.NameE
                     </td>
                     <td>
                         @org.AuthorsToString()

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MLinfo_v1._0.Models;
+using MLinfo_v1._0.Models.DBModels;
 
 namespace MLinfo_v1._0.Data;
 

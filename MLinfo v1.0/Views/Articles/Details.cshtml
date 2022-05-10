@@ -1,4 +1,5 @@
-﻿@model MLinfo_v1._0.Models.Article
+﻿@using MLinfo_v1._0.Models.DatabasedModels
+@model Article
 
 @{
     ViewData["Title"] = "Details";
@@ -10,89 +11,119 @@
     <h4>Article</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TitleE)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Title)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TitleE)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Language)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TitleR)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Language.NameE)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TitleR)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Authors)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AuthorsE)
         </dt>
-        <dd class = "col-sm-10">
-            @Model.AuthorsToString()
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AuthorsE)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SecondaryArticle)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.AuthorsR)
         </dt>
-        <dd class = "col-sm-10">
-            @Model.SecondaryArticleToString()
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.AuthorsR)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SourceE)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SourceE)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SourceR)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SourceR)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Year)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Year)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Source)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolumeE)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Source)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolumeE)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Volume)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolumeR)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Volume)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolumeR)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Issue)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Issue)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Pages)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PagesE)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Pages)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PagesE)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DOI)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PagesR)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DOI)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PagesR)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doie)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doie)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doir)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doir)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Methods)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Model.MethodsToString()
         </dd>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Keywords)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Model.KeywordsToString()
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Comment)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CommentE)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Comment)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CommentE)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PDFfile)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CommentR)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PDFfile)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CommentR)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PdfFile)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PdfFile)
         </dd>
     </dl>
 </div>

@@ -1,4 +1,5 @@
-﻿ using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using MLinfo_v1._0.Models.DatabasedModels;
 using System.ComponentModel;
 
 namespace MLinfo_v1._0.Models.ViewModels

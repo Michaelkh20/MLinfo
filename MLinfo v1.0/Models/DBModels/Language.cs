@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace MLinfo_v1._0.Models;
+namespace MLinfo_v1._0.Models.DBModels;
 
 public class Language
 {

@@ -13,12 +13,12 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="@Model.AuthorDB.NameE" class="form-label mt-2">Name English</label>
+                <label asp-for="@Model.AuthorDB.NameE" class="form-label mt-2"></label>
                 <input asp-for="@Model.AuthorDB.NameE" class="form-control" />
                 <span asp-validation-for="@Model.AuthorDB.NameE" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="@Model.AuthorDB.NameR" class="form-label mt-2">Name Russian</label>
+                <label asp-for="@Model.AuthorDB.NameR" class="form-label mt-2"></label>
                 <input asp-for="@Model.AuthorDB.NameR" class="form-control" />
                 <span asp-validation-for="@Model.AuthorDB.NameR" class="text-danger"></span>
             </div>
