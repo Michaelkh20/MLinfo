@@ -2,11 +2,11 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://germandilio.github.io/RPG_Deep_Dive/",
+        "baseUrl": "https://michaelkh20.github.io/MLinfo/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://germandilio.github.io/RPG_Deep_Dive/",
+    "baseUrl": "https://michaelkh20.github.io/MLinfo/",
     "changefreq": "weekly"
   },
   "homepages": [],
@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.ArticlesController.html",
-          "hash": "gRa4kPHCpK+H7xYPZrWrWw388Tv2qXRxBs9TUNVUyuA="
+          "hash": "fX9yFMEFcquxKI02Jgqy3MCzTSeNt2w/L2uHlPV/Vj8="
         }
       },
       "is_incremental": false,
@@ -40,7 +40,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.AuthorsController.html",
-          "hash": "fTiE+Vq4eVXgSs4gyx70iAQ1p7Z0/RdPU+Fw48TUg0o="
+          "hash": "KNyTUivKJquVbZfC+SorjK4Ef33oBUT4h1EJ5gfdklo="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.CountriesController.html",
-          "hash": "8vM0RSW3GZ/qGeg7+Ko2GoCGj+k9P+wOv9jqJBgFfQI="
+          "hash": "x6NLQbA2hvye1cajtJqDol04W7WbOP7VTiixcMff9pU="
         }
       },
       "is_incremental": false,
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.HomeController.html",
-          "hash": "IFZwcavq1plmL5N8uRpDVDAQqXnV1Y8zmmCrxSrHJFk="
+          "hash": "mHDpZcOL4Sn/YLKEqzFfsjT3ChApnJ0G5aRKkl5S0oc="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.KeywordsController.html",
-          "hash": "cjPjsbYbCmhGQRiqe1NLg1BexxzVh6+L36RogTa6mfs="
+          "hash": "e8Lm3J2zC0WinoqFRSx7p/w9wzMUR0r9HLY9H/P4+wI="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.LanguagesController.html",
-          "hash": "CQUtk+5U5DtqS8F8TZlohovxQWB+P4LKLL629Im3+uw="
+          "hash": "lRf9KQzPvyVise+uTUjPKq6B+PAivSis9EuJAfbY0rM="
         }
       },
       "is_incremental": false,
@@ -100,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.MLMethodsController.html",
-          "hash": "97gGFYYn1R34tWjQRm2fAcjNRXmyXsXQrbYRQH4emFY="
+          "hash": "EPw+jERM7LQoP9VhYxJb5Q1rdsgJ1YdXAmF9cNVhYQo="
         }
       },
       "is_incremental": false,
@@ -112,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.OrganizationsController.html",
-          "hash": "55LuYc1TJqV1Gek1RhiLFS1891gLmmM2rxaE+pCSzbk="
+          "hash": "Cve5ydrm4r1EXJxjOc3uN2nBPVSkNDIlxh/mHNPv2NY="
         }
       },
       "is_incremental": false,
@@ -136,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Data.ApplicationDBContext.html",
-          "hash": "dskpwnCPI20OQXOTr1DfhtEWyYXsyTcJVfdVwNR7wVQ="
+          "hash": "2g8m4M4omxuS68QutEsez6snWiQcCWfdmX89OrLETvg="
         }
       },
       "is_incremental": false,
@@ -160,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Article.html",
-          "hash": "nXGtWvD8g3fne808XGjzQ1Z4U/F2a2JvU8XMMiaSwRk="
+          "hash": "SRneeTOzjfmIgj+rp3xb8YpUaXrF5AbkW3v6H+povaM="
         }
       },
       "is_incremental": false,
@@ -172,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Author.html",
-          "hash": "1wOMv3LQtYJtpkO7Qyk3C8EPeTYfFPYXJ8JILqsPiyQ="
+          "hash": "sfFiI3GmLWp4uT2grx5rwKyV48uxmEpeMQAk1gGiikw="
         }
       },
       "is_incremental": false,
@@ -184,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Country.html",
-          "hash": "gg3IV2865NLdA0WfnLz3NRRWsxlmHCvyeM1+qVjQ4aw="
+          "hash": "fvBT1VJ5rCicJHlMTCjjtFJ8UqSx8Xf8xb4WTZ++4j4="
         }
       },
       "is_incremental": false,
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Keyword.html",
-          "hash": "xINbHG/RRjhpFc1TBcBQYC7i8lN9EFImmTklmiFjxq8="
+          "hash": "Lmu5A/iTi/dqvsABdS++EAAlrN4rpZ2UI4hgaaFGlno="
         }
       },
       "is_incremental": false,
@@ -208,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.MLMethod.html",
-          "hash": "5zSx9IH4TjHb4z8sWt/Her3QqQzk+2UZysFaVTaPBos="
+          "hash": "TE8bxBVTBMitcOjH+uO9CJdScm90eAgUOmf8NkEygeI="
         }
       },
       "is_incremental": false,
@@ -220,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Organization.html",
-          "hash": "W1fRSRnms1OXg40jDxoGMOtIoWeB9eCkQMQoOKu2rXk="
+          "hash": "p4PvlFwuvZf5Yn16WE7NWTeoWdS6UNyQrH8ABtQlpzc="
         }
       },
       "is_incremental": false,
@@ -244,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.ErrorViewModel.html",
-          "hash": "oAYzvplv83cBoXDffNbOYcsKqMWa9Oy9HUggtb1x/vQ="
+          "hash": "jwDisD25XtdIlLEBxe7D25DNpuYii8VVuxY6cyjbXbI="
         }
       },
       "is_incremental": false,
@@ -256,7 +256,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.html",
-          "hash": "rn9TLiFBecJ9g2ps4OhhQq6dCgK0BxI1JKfTfJk5SJY="
+          "hash": "JAUkEc1P3zkP7g6GG2GwNJ6tAaYS7U69oZTiPqkgAgE="
         }
       },
       "is_incremental": false,
@@ -268,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.html",
-          "hash": "OeJGEn0qS54nQU2CghKEsFOpJtvY+x71blnr9ZjIebw="
+          "hash": "igwKb+LwTpEZP71E6awQQ1D40BKcaOGtPo8de0vnlVU="
         }
       },
       "is_incremental": false,
@@ -280,7 +280,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html",
-          "hash": "4kyQkFJ0BTkZl/MivMzaTW+Ad+WBFyS84IPpJcmZ/tE="
+          "hash": "2sUvediKkCEy6JZhjT5u7bynq8uYVL2aZyUlsqa++Sg="
         }
       },
       "is_incremental": false,
