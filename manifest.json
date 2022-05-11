@@ -1,0 +1,399 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://germandilio.github.io/RPG_Deep_Dive/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://germandilio.github.io/RPG_Deep_Dive/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "D:/a/MLinfo/MLinfo/MLinfo v1.0/documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.ArticlesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.ArticlesController.html",
+          "hash": "gRa4kPHCpK+H7xYPZrWrWw388Tv2qXRxBs9TUNVUyuA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.AuthorsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.AuthorsController.html",
+          "hash": "fTiE+Vq4eVXgSs4gyx70iAQ1p7Z0/RdPU+Fw48TUg0o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.CountriesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.CountriesController.html",
+          "hash": "8vM0RSW3GZ/qGeg7+Ko2GoCGj+k9P+wOv9jqJBgFfQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.HomeController.html",
+          "hash": "IFZwcavq1plmL5N8uRpDVDAQqXnV1Y8zmmCrxSrHJFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.KeywordsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.KeywordsController.html",
+          "hash": "cjPjsbYbCmhGQRiqe1NLg1BexxzVh6+L36RogTa6mfs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.LanguagesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.LanguagesController.html",
+          "hash": "CQUtk+5U5DtqS8F8TZlohovxQWB+P4LKLL629Im3+uw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.MLMethodsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.MLMethodsController.html",
+          "hash": "97gGFYYn1R34tWjQRm2fAcjNRXmyXsXQrbYRQH4emFY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.OrganizationsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.OrganizationsController.html",
+          "hash": "55LuYc1TJqV1Gek1RhiLFS1891gLmmM2rxaE+pCSzbk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Controllers.html",
+          "hash": "Vlo88JsUV/abuaLNpg27Fr2eZptLtuvS/nhRv5s9E40="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Data.ApplicationDBContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Data.ApplicationDBContext.html",
+          "hash": "dskpwnCPI20OQXOTr1DfhtEWyYXsyTcJVfdVwNR7wVQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Data.html",
+          "hash": "MQzKu1s6NuJg/wf5zdiOkWFJnIcwjqbbyIqFtW1UcPE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Article.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Article.html",
+          "hash": "nXGtWvD8g3fne808XGjzQ1Z4U/F2a2JvU8XMMiaSwRk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Author.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Author.html",
+          "hash": "1wOMv3LQtYJtpkO7Qyk3C8EPeTYfFPYXJ8JILqsPiyQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Country.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Country.html",
+          "hash": "gg3IV2865NLdA0WfnLz3NRRWsxlmHCvyeM1+qVjQ4aw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Keyword.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Keyword.html",
+          "hash": "xINbHG/RRjhpFc1TBcBQYC7i8lN9EFImmTklmiFjxq8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.MLMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.MLMethod.html",
+          "hash": "5zSx9IH4TjHb4z8sWt/Her3QqQzk+2UZysFaVTaPBos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Organization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.Organization.html",
+          "hash": "W1fRSRnms1OXg40jDxoGMOtIoWeB9eCkQMQoOKu2rXk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.DatabasedModels.html",
+          "hash": "zlqxfExTqImGQXEeIkIJWcUbpu8cMhSPbo6G+MHBBkE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.ErrorViewModel.html",
+          "hash": "oAYzvplv83cBoXDffNbOYcsKqMWa9Oy9HUggtb1x/vQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.html",
+          "hash": "rn9TLiFBecJ9g2ps4OhhQq6dCgK0BxI1JKfTfJk5SJY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.html",
+          "hash": "OeJGEn0qS54nQU2CghKEsFOpJtvY+x71blnr9ZjIebw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html",
+          "hash": "4kyQkFJ0BTkZl/MivMzaTW+Ad+WBFyS84IPpJcmZ/tE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.ViewModels.html",
+          "hash": "hEkQKyuXNTrV+QtytHtlud5kFO96hC8Ys1VbteE89KI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MLinfo_v1._0.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MLinfo_v1._0.Models.html",
+          "hash": "o/Ptk3Fmrd6uCQPd/k3saNOm2dpIZ30caObCay2Z5+s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "TQtQLX2MadK+/3w886/ued3pDCXRpyLL9k/kGEIhMjQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "DS4T7VzfoeDIUDz85/wDHoVjA41zynvw5r6a02QAtUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "lXO25MF6JZ5nk0aOiuU2JnGHjswm6rp6BEWoyR9S8O8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 24,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
