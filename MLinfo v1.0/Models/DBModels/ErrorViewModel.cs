@@ -1,8 +1,0 @@
-namespace MLinfo_v1._0.Models.DBModels;
-
-public class ErrorViewModel
-{
-    public string? RequestId { get; set; }
-
-    public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-}
