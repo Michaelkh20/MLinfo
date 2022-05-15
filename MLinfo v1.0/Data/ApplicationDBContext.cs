@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using MLinfo_v1._0.Models.DatabasedModels;
 
 namespace MLinfo_v1._0.Data
 {
-    public partial class ApplicationDBContext : DbContext
+    public partial class ApplicationDBContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDBContext()
         {
@@ -26,6 +28,7 @@ namespace MLinfo_v1._0.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Author>(entity =>
             {
                 entity.HasKey(e => e.ID);

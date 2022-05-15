@@ -45,12 +45,12 @@
         "dest": "api"
       },
       {
-        "src": "manual",
+        "src": "articles",
         "files": [
           "toc.yml",
           "*.md"
         ],
-        "dest": "manual"
+        "dest": "articles"
       }
     ],
     "overwrite": [
@@ -80,7 +80,7 @@
       }
     },
     "xref": [
-      "https://germandilio.github.io/MLinfo/xrefmap.yml"
+      "https://michaelkh20.github.io/MLinfo/xrefmap.yml"
     ],
     "xrefService": [
       "https://xref.docs.microsoft.com/query?uid={uid}"
