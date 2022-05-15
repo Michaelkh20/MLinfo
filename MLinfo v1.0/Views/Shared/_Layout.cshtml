@@ -25,40 +25,61 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Articles" asp-action="Index">Articles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Authors" asp-action="Index">Authors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Countries" asp-action="Index">Countries</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Keywords" asp-action="Index">Keywords</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="MLMethods" asp-action="Index">MLMethods</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Organizations" asp-action="Index">Organizations</a>
-                        </li>
-                        
+                        @if (User.Identity.IsAuthenticated && (User.IsInRole("moderator") || User.IsInRole("administrator")))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Articles" asp-action="Index">Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Authors" asp-action="Index">Authors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Countries" asp-action="Index">Countries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Keywords" asp-action="Index">Keywords</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="MLMethods" asp-action="Index">MLMethods</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Organizations" asp-action="Index">Organizations</a>
+                            </li>
+                        }
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("administrator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Users" asp-action="Index">Users</a>
+                            </li>
+                        }
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Loged In: @User.Identity.Name</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Account" asp-action="Logout">Logout</a>
+                            </li>
+                        }
+
+
+
                         @*<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
                             </div>
-                        </li>*@
+                            </li>*@
                     </ul>
-                    <form class="d-flex">
+                    @*<form class="d-flex">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
                         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    </form>*@
                 </div>
             </div>
         </nav>

@@ -1,16 +1,19 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MLinfo_v1._0.Models.ViewModels;
 
 namespace MLinfo_v1._0.Controllers
 {
-
+    [Authorize(Roles = "administrator")]
     public class UsersController : Controller
     {
+        RoleManager<IdentityRole> _roleManager;
         UserManager<IdentityUser> _userManager;
 
-        public UsersController(UserManager<IdentityUser> userManager)
+        public UsersController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
         {
+            _roleManager = roleManager;
             _userManager = userManager;
         }
 
@@ -136,6 +139,53 @@ namespace MLinfo_v1._0.Controllers
                 }
             }
             return View(model);
+        }
+
+        public async Task<IActionResult> EditRoles(string userId)
+        {
+            // получаем пользователя
+            IdentityUser user = await _userManager.FindByIdAsync(userId);
+            if (user != null)
+            {
+                // получем список ролей пользователя
+                var userRoles = await _userManager.GetRolesAsync(user);
+                var allRoles = _roleManager.Roles.ToList();
+                ChangeRoleViewModel model = new ChangeRoleViewModel
+                {
+                    UserId = user.Id,
+                    UserEmail = user.Email,
+                    UserRoles = userRoles,
+                    AllRoles = allRoles
+                };
+                return View(model);
+            }
+
+            return NotFound();
+        }
+        [HttpPost]
+        public async Task<IActionResult> EditRoles(string userId, List<string> roles)
+        {
+            // получаем пользователя
+            IdentityUser user = await _userManager.FindByIdAsync(userId);
+            if (user != null)
+            {
+                // получем список ролей пользователя
+                var userRoles = await _userManager.GetRolesAsync(user);
+                // получаем все роли
+                var allRoles = _roleManager.Roles.ToList();
+                // получаем список ролей, которые были добавлены
+                var addedRoles = roles.Except(userRoles);
+                // получаем роли, которые были удалены
+                var removedRoles = userRoles.Except(roles);
+
+                await _userManager.AddToRolesAsync(user, addedRoles);
+
+                await _userManager.RemoveFromRolesAsync(user, removedRoles);
+
+                return RedirectToAction("Index");
+            }
+
+            return NotFound();
         }
     }
 }

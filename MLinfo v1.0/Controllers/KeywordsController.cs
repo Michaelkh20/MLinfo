@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,9 +13,7 @@ using MLinfo_v1._0.Models.DatabasedModels;
 
 namespace MLinfo_v1._0.Controllers
 {
-    /// <summary>
-    /// something
-    /// </summary>
+    [Authorize(Roles = "moderator, administrator")]
     public class KeywordsController : Controller
     {
         private readonly ApplicationDBContext _context;
