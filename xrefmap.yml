@@ -13,15 +13,15 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.AccountController
   fullName: MLinfo_v1._0.Controllers.AccountController
   nameWithType: AccountController
-- uid: MLinfo_v1._0.Controllers.AccountController.#ctor(UserManager{IdentityUser},SignInManager{IdentityUser})
-  name: AccountController(UserManager<IdentityUser>, SignInManager<IdentityUser>)
-  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController__ctor_UserManager_IdentityUser__SignInManager_IdentityUser__
-  commentId: M:MLinfo_v1._0.Controllers.AccountController.#ctor(UserManager{IdentityUser},SignInManager{IdentityUser})
-  name.vb: AccountController(UserManager(Of IdentityUser), SignInManager(Of IdentityUser))
-  fullName: MLinfo_v1._0.Controllers.AccountController.AccountController(UserManager<IdentityUser>, SignInManager<IdentityUser>)
-  fullName.vb: MLinfo_v1._0.Controllers.AccountController.AccountController(UserManager(Of IdentityUser), SignInManager(Of IdentityUser))
-  nameWithType: AccountController.AccountController(UserManager<IdentityUser>, SignInManager<IdentityUser>)
-  nameWithType.vb: AccountController.AccountController(UserManager(Of IdentityUser), SignInManager(Of IdentityUser))
+- uid: MLinfo_v1._0.Controllers.AccountController.#ctor(SignInManager{IdentityUser})
+  name: AccountController(SignInManager<IdentityUser>)
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController__ctor_SignInManager_IdentityUser__
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.#ctor(SignInManager{IdentityUser})
+  name.vb: AccountController(SignInManager(Of IdentityUser))
+  fullName: MLinfo_v1._0.Controllers.AccountController.AccountController(SignInManager<IdentityUser>)
+  fullName.vb: MLinfo_v1._0.Controllers.AccountController.AccountController(SignInManager(Of IdentityUser))
+  nameWithType: AccountController.AccountController(SignInManager<IdentityUser>)
+  nameWithType.vb: AccountController.AccountController(SignInManager(Of IdentityUser))
 - uid: MLinfo_v1._0.Controllers.AccountController.#ctor*
   name: AccountController
   href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController__ctor_
@@ -61,25 +61,6 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.AccountController.Logout
   nameWithType: AccountController.Logout
-- uid: MLinfo_v1._0.Controllers.AccountController.Register
-  name: Register()
-  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Register
-  commentId: M:MLinfo_v1._0.Controllers.AccountController.Register
-  fullName: MLinfo_v1._0.Controllers.AccountController.Register()
-  nameWithType: AccountController.Register()
-- uid: MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)
-  name: Register(RegisterViewModel)
-  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Register_MLinfo_v1__0_Models_ViewModels_RegisterViewModel_
-  commentId: M:MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)
-  fullName: MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)
-  nameWithType: AccountController.Register(RegisterViewModel)
-- uid: MLinfo_v1._0.Controllers.AccountController.Register*
-  name: Register
-  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Register_
-  commentId: Overload:MLinfo_v1._0.Controllers.AccountController.Register
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.AccountController.Register
-  nameWithType: AccountController.Register
 - uid: MLinfo_v1._0.Controllers.ArticlesController
   name: ArticlesController
   href: api/MLinfo_v1._0.Controllers.ArticlesController.html
@@ -967,108 +948,6 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.OrganizationsController.Index
   nameWithType: OrganizationsController.Index
-- uid: MLinfo_v1._0.Controllers.RolesController
-  name: RolesController
-  href: api/MLinfo_v1._0.Controllers.RolesController.html
-  commentId: T:MLinfo_v1._0.Controllers.RolesController
-  fullName: MLinfo_v1._0.Controllers.RolesController
-  nameWithType: RolesController
-- uid: MLinfo_v1._0.Controllers.RolesController.#ctor(RoleManager{IdentityRole},UserManager{IdentityUser})
-  name: RolesController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController__ctor_RoleManager_IdentityRole__UserManager_IdentityUser__
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.#ctor(RoleManager{IdentityRole},UserManager{IdentityUser})
-  name.vb: RolesController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
-  fullName: MLinfo_v1._0.Controllers.RolesController.RolesController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
-  fullName.vb: MLinfo_v1._0.Controllers.RolesController.RolesController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
-  nameWithType: RolesController.RolesController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
-  nameWithType.vb: RolesController.RolesController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
-- uid: MLinfo_v1._0.Controllers.RolesController.#ctor*
-  name: RolesController
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController__ctor_
-  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.#ctor
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.RolesController.RolesController
-  nameWithType: RolesController.RolesController
-- uid: MLinfo_v1._0.Controllers.RolesController.Create
-  name: Create()
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Create
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.Create
-  fullName: MLinfo_v1._0.Controllers.RolesController.Create()
-  nameWithType: RolesController.Create()
-- uid: MLinfo_v1._0.Controllers.RolesController.Create(System.String)
-  name: Create(String)
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Create_System_String_
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.Create(System.String)
-  fullName: MLinfo_v1._0.Controllers.RolesController.Create(System.String)
-  nameWithType: RolesController.Create(String)
-- uid: MLinfo_v1._0.Controllers.RolesController.Create*
-  name: Create
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Create_
-  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Create
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.RolesController.Create
-  nameWithType: RolesController.Create
-- uid: MLinfo_v1._0.Controllers.RolesController.Delete(System.String)
-  name: Delete(String)
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Delete_System_String_
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.Delete(System.String)
-  fullName: MLinfo_v1._0.Controllers.RolesController.Delete(System.String)
-  nameWithType: RolesController.Delete(String)
-- uid: MLinfo_v1._0.Controllers.RolesController.Delete*
-  name: Delete
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Delete_
-  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Delete
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.RolesController.Delete
-  nameWithType: RolesController.Delete
-- uid: MLinfo_v1._0.Controllers.RolesController.Edit(System.String)
-  name: Edit(String)
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Edit_System_String_
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.Edit(System.String)
-  fullName: MLinfo_v1._0.Controllers.RolesController.Edit(System.String)
-  nameWithType: RolesController.Edit(String)
-- uid: MLinfo_v1._0.Controllers.RolesController.Edit(System.String,List{System.String})
-  name: Edit(String, List<String>)
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Edit_System_String_List_System_String__
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.Edit(System.String,List{System.String})
-  name.vb: Edit(String, List(Of String))
-  fullName: MLinfo_v1._0.Controllers.RolesController.Edit(System.String, List<System.String>)
-  fullName.vb: MLinfo_v1._0.Controllers.RolesController.Edit(System.String, List(Of System.String))
-  nameWithType: RolesController.Edit(String, List<String>)
-  nameWithType.vb: RolesController.Edit(String, List(Of String))
-- uid: MLinfo_v1._0.Controllers.RolesController.Edit*
-  name: Edit
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Edit_
-  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Edit
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.RolesController.Edit
-  nameWithType: RolesController.Edit
-- uid: MLinfo_v1._0.Controllers.RolesController.Index
-  name: Index()
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Index
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.Index
-  fullName: MLinfo_v1._0.Controllers.RolesController.Index()
-  nameWithType: RolesController.Index()
-- uid: MLinfo_v1._0.Controllers.RolesController.Index*
-  name: Index
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Index_
-  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Index
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.RolesController.Index
-  nameWithType: RolesController.Index
-- uid: MLinfo_v1._0.Controllers.RolesController.UserList
-  name: UserList()
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_UserList
-  commentId: M:MLinfo_v1._0.Controllers.RolesController.UserList
-  fullName: MLinfo_v1._0.Controllers.RolesController.UserList()
-  nameWithType: RolesController.UserList()
-- uid: MLinfo_v1._0.Controllers.RolesController.UserList*
-  name: UserList
-  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_UserList_
-  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.UserList
-  isSpec: "True"
-  fullName: MLinfo_v1._0.Controllers.RolesController.UserList
-  nameWithType: RolesController.UserList
 - uid: MLinfo_v1._0.Controllers.UserHomeController
   name: UserHomeController
   href: api/MLinfo_v1._0.Controllers.UserHomeController.html
@@ -1094,15 +973,15 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.UsersController
   fullName: MLinfo_v1._0.Controllers.UsersController
   nameWithType: UsersController
-- uid: MLinfo_v1._0.Controllers.UsersController.#ctor(UserManager{IdentityUser})
-  name: UsersController(UserManager<IdentityUser>)
-  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController__ctor_UserManager_IdentityUser__
-  commentId: M:MLinfo_v1._0.Controllers.UsersController.#ctor(UserManager{IdentityUser})
-  name.vb: UsersController(UserManager(Of IdentityUser))
-  fullName: MLinfo_v1._0.Controllers.UsersController.UsersController(UserManager<IdentityUser>)
-  fullName.vb: MLinfo_v1._0.Controllers.UsersController.UsersController(UserManager(Of IdentityUser))
-  nameWithType: UsersController.UsersController(UserManager<IdentityUser>)
-  nameWithType.vb: UsersController.UsersController(UserManager(Of IdentityUser))
+- uid: MLinfo_v1._0.Controllers.UsersController.#ctor(RoleManager{IdentityRole},UserManager{IdentityUser})
+  name: UsersController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController__ctor_RoleManager_IdentityRole__UserManager_IdentityUser__
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.#ctor(RoleManager{IdentityRole},UserManager{IdentityUser})
+  name.vb: UsersController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
+  fullName: MLinfo_v1._0.Controllers.UsersController.UsersController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
+  fullName.vb: MLinfo_v1._0.Controllers.UsersController.UsersController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
+  nameWithType: UsersController.UsersController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
+  nameWithType.vb: UsersController.UsersController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
 - uid: MLinfo_v1._0.Controllers.UsersController.#ctor*
   name: UsersController
   href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController__ctor_
@@ -1180,6 +1059,28 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.UsersController.Edit
   nameWithType: UsersController.Edit
+- uid: MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String)
+  name: EditRoles(String)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_EditRoles_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String)
+  fullName: MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String)
+  nameWithType: UsersController.EditRoles(String)
+- uid: MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String,List{System.String})
+  name: EditRoles(String, List<String>)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_EditRoles_System_String_List_System_String__
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String,List{System.String})
+  name.vb: EditRoles(String, List(Of String))
+  fullName: MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String, List<System.String>)
+  fullName.vb: MLinfo_v1._0.Controllers.UsersController.EditRoles(System.String, List(Of System.String))
+  nameWithType: UsersController.EditRoles(String, List<String>)
+  nameWithType.vb: UsersController.EditRoles(String, List(Of String))
+- uid: MLinfo_v1._0.Controllers.UsersController.EditRoles*
+  name: EditRoles
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_EditRoles_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.EditRoles
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.EditRoles
+  nameWithType: UsersController.EditRoles
 - uid: MLinfo_v1._0.Controllers.UsersController.Index
   name: Index()
   href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Index

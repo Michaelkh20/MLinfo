@@ -28,7 +28,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.AccountController.html",
-          "hash": "Lg9CrrmFQemmkPlf/m6i3oS4jEySoe7fnPvjwPiocQk="
+          "hash": "mdgV2iuyHqJaV5LhPlgAqrYWzdHWF+h+VL0vDAGDYZI="
         }
       },
       "is_incremental": false,
@@ -88,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.KeywordsController.html",
-          "hash": "yNzFwhIbnD6JJZrsyN8wm3buCNFuNz2r8kHNtwRReJ0="
+          "hash": "wGc6moHVB/U3LLza4jZG1f7JtyfOZy+Z1h7dajZc2Ro="
         }
       },
       "is_incremental": false,
@@ -132,18 +132,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MLinfo_v1._0.Controllers.RolesController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MLinfo_v1._0.Controllers.RolesController.html",
-          "hash": "/RflOvf06xzbfDqWm5f5B8VFOflm20xKooqkDLjaCNc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/MLinfo_v1._0.Controllers.UserHomeController.yml",
       "output": {
         ".html": {
@@ -160,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.UsersController.html",
-          "hash": "9MaruGaXQvHduhAlXraUxvDBmKO0w2jZqWEZvQWJTd8="
+          "hash": "D6qoR4LezayRIMasZfgL2ctoqEmT2KhgRe5ZZy/jJ6Q="
         }
       },
       "is_incremental": false,
@@ -172,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MLinfo_v1._0.Controllers.html",
-          "hash": "e3SskxHqaPfzAKRRkKvfC+eHoC4A3dPUDpgomtmbtKQ="
+          "hash": "CSvND9wdk/b/9qclyTh84MTaWH7SqSNTiAEEw4zGSNY="
         }
       },
       "is_incremental": false,
@@ -436,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "plw1+vwRcyFdwaQsiRGrCqzasxHOowal0kenhANnkaA="
+          "hash": "ps+NnuTvLKuAnlBRIKlA4kdnWDzW+jZvEdse0p6gNac="
         }
       },
       "is_incremental": false,
@@ -511,7 +499,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 34,
+          "total_file_count": 33,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

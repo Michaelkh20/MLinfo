@@ -2,217 +2,211 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.AccountController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.ArticlesController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.AuthorsController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.CountriesController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.HomeController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.KeywordsController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.LanguagesController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.MLMethodsController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.OrganizationsController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.RolesController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.UserHomeController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.UsersController.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Controllers.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Data.ApplicationDBContext.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Data.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.Article.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.Author.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.Country.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.Keyword.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.MLMethod.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.Organization.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.DatabasedModels.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ErrorViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.ViewModels.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/api/MLinfo_v1._0.Models.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/articles/intro.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://michaelkh20.github.io/MLinfo/index.html</loc>
-    <lastmod>2022-05-15T01:07:12+00:00</lastmod>
+    <lastmod>2022-05-15T04:19:10+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

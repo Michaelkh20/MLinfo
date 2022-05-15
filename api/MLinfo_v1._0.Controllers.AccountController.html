@@ -101,12 +101,12 @@
   
   
   <a id="MLinfo_v1__0_Controllers_AccountController__ctor_" data-uid="MLinfo_v1._0.Controllers.AccountController.#ctor*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_AccountController__ctor_UserManager_IdentityUser__SignInManager_IdentityUser__" data-uid="MLinfo_v1._0.Controllers.AccountController.#ctor(UserManager{IdentityUser},SignInManager{IdentityUser})">AccountController(UserManager&lt;IdentityUser&gt;, SignInManager&lt;IdentityUser&gt;)</h4>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController__ctor_SignInManager_IdentityUser__" data-uid="MLinfo_v1._0.Controllers.AccountController.#ctor(SignInManager{IdentityUser})">AccountController(SignInManager&lt;IdentityUser&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AccountController(UserManager&lt;IdentityUser&gt; userManager, SignInManager&lt;IdentityUser&gt; signInManager)</code></pre>
+    <pre><code class="lang-csharp hljs">public AccountController(SignInManager&lt;IdentityUser&gt; signInManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,11 +118,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><span class="xref">UserManager</span>&lt;<span class="xref">IdentityUser</span>&gt;</td>
-        <td><span class="parametername">userManager</span></td>
-        <td></td>
-      </tr>
       <tr>
         <td><span class="xref">SignInManager</span>&lt;<span class="xref">IdentityUser</span>&gt;</td>
         <td><span class="parametername">signInManager</span></td>
@@ -226,73 +221,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Logout()</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Controllers_AccountController_Register_" data-uid="MLinfo_v1._0.Controllers.AccountController.Register*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_AccountController_Register" data-uid="MLinfo_v1._0.Controllers.AccountController.Register">Register()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IActionResult Register()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">IActionResult</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Controllers_AccountController_Register_" data-uid="MLinfo_v1._0.Controllers.AccountController.Register*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_AccountController_Register_MLinfo_v1__0_Models_ViewModels_RegisterViewModel_" data-uid="MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)">Register(RegisterViewModel)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Register(RegisterViewModel model)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html">RegisterViewModel</a></td>
-        <td><span class="parametername">model</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
