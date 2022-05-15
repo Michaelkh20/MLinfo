@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ApplicationDBContext
+    <title>Class AccountController
    | ML Info Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ApplicationDBContext
+    <meta name="title" content="Class AccountController
    | ML Info Docs ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,45 +78,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MLinfo_v1._0.Data.ApplicationDBContext">
+            <article class="content wrap" id="_content" data-uid="MLinfo_v1._0.Controllers.AccountController">
   
   
-  <h1 id="MLinfo_v1__0_Data_ApplicationDBContext" data-uid="MLinfo_v1._0.Data.ApplicationDBContext" class="text-break">Class ApplicationDBContext
+  <h1 id="MLinfo_v1__0_Controllers_AccountController" data-uid="MLinfo_v1._0.Controllers.AccountController" class="text-break">Class AccountController
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">ApplicationDBContext</span></div>
+    <div class="level1"><span class="xref">AccountController</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="MLinfo_v1._0.Data.html">MLinfo_v1._0.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MLinfo_v1._0.Controllers.html">MLinfo_v1._0.Controllers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="MLinfo_v1__0_Data_ApplicationDBContext_syntax">Syntax</h5>
+  <h5 id="MLinfo_v1__0_Controllers_AccountController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ApplicationDBContext : IdentityDbContext&lt;IdentityUser&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class AccountController : Controller</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext__ctor_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.#ctor*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext__ctor" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.#ctor">ApplicationDBContext()</h4>
+  <a id="MLinfo_v1__0_Controllers_AccountController__ctor_" data-uid="MLinfo_v1._0.Controllers.AccountController.#ctor*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController__ctor_UserManager_IdentityUser__SignInManager_IdentityUser__" data-uid="MLinfo_v1._0.Controllers.AccountController.#ctor(UserManager{IdentityUser},SignInManager{IdentityUser})">AccountController(UserManager&lt;IdentityUser&gt;, SignInManager&lt;IdentityUser&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApplicationDBContext()</code></pre>
-  </div>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext__ctor_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.#ctor*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext__ctor_DbContextOptions_MLinfo_v1__0_Data_ApplicationDBContext__" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.#ctor(DbContextOptions{MLinfo_v1._0.Data.ApplicationDBContext})">ApplicationDBContext(DbContextOptions&lt;ApplicationDBContext&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ApplicationDBContext(DbContextOptions&lt;ApplicationDBContext&gt; options)</code></pre>
+    <pre><code class="lang-csharp hljs">public AccountController(UserManager&lt;IdentityUser&gt; userManager, SignInManager&lt;IdentityUser&gt; signInManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -129,160 +119,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DbContextOptions</span>&lt;<a class="xref" href="MLinfo_v1._0.Data.ApplicationDBContext.html">ApplicationDBContext</a>&gt;</td>
-        <td><span class="parametername">options</span></td>
+        <td><span class="xref">UserManager</span>&lt;<span class="xref">IdentityUser</span>&gt;</td>
+        <td><span class="parametername">userManager</span></td>
         <td></td>
       </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_AuthorsInfos_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.AuthorsInfos*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_AuthorsInfos" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.AuthorsInfos">AuthorsInfos</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Author&gt; AuthorsInfos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DbSet</span>&lt;<span class="xref">Author</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_CountriesInfos_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.CountriesInfos*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_CountriesInfos" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.CountriesInfos">CountriesInfos</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Country&gt; CountriesInfos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DbSet</span>&lt;<span class="xref">Country</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_KeywordsInfos_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.KeywordsInfos*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_KeywordsInfos" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.KeywordsInfos">KeywordsInfos</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Keyword&gt; KeywordsInfos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DbSet</span>&lt;<span class="xref">Keyword</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_MethodMlinfos_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.MethodMlinfos*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_MethodMlinfos" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.MethodMlinfos">MethodMlinfos</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;MLMethod&gt; MethodMlinfos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DbSet</span>&lt;<span class="xref">MLMethod</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_OrganizationsInfos_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.OrganizationsInfos*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_OrganizationsInfos" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.OrganizationsInfos">OrganizationsInfos</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Organization&gt; OrganizationsInfos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DbSet</span>&lt;<span class="xref">Organization</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_ReferencesInfos_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.ReferencesInfos*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_ReferencesInfos" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.ReferencesInfos">ReferencesInfos</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DbSet&lt;Article&gt; ReferencesInfos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DbSet</span>&lt;<span class="xref">Article</span>&gt;</td>
+        <td><span class="xref">SignInManager</span>&lt;<span class="xref">IdentityUser</span>&gt;</td>
+        <td><span class="parametername">signInManager</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -291,13 +134,13 @@
   </h3>
   
   
-  <a id="MLinfo_v1__0_Data_ApplicationDBContext_OnModelCreating_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.OnModelCreating*"></a>
-  <h4 id="MLinfo_v1__0_Data_ApplicationDBContext_OnModelCreating_ModelBuilder_" data-uid="MLinfo_v1._0.Data.ApplicationDBContext.OnModelCreating(ModelBuilder)">OnModelCreating(ModelBuilder)</h4>
+  <a id="MLinfo_v1__0_Controllers_AccountController_Login_" data-uid="MLinfo_v1._0.Controllers.AccountController.Login*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController_Login_MLinfo_v1__0_Models_ViewModels_LoginViewModel_" data-uid="MLinfo_v1._0.Controllers.AccountController.Login(MLinfo_v1._0.Models.ViewModels.LoginViewModel)">Login(LoginViewModel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnModelCreating(ModelBuilder modelBuilder)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Login(LoginViewModel model)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -310,8 +153,157 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ModelBuilder</span></td>
-        <td><span class="parametername">modelBuilder</span></td>
+        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.LoginViewModel.html">LoginViewModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_AccountController_Login_" data-uid="MLinfo_v1._0.Controllers.AccountController.Login*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController_Login_System_String_" data-uid="MLinfo_v1._0.Controllers.AccountController.Login(System.String)">Login(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionResult Login(string returnUrl = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">returnUrl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IActionResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_AccountController_Logout_" data-uid="MLinfo_v1._0.Controllers.AccountController.Logout*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController_Logout" data-uid="MLinfo_v1._0.Controllers.AccountController.Logout">Logout()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Logout()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_AccountController_Register_" data-uid="MLinfo_v1._0.Controllers.AccountController.Register*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController_Register" data-uid="MLinfo_v1._0.Controllers.AccountController.Register">Register()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionResult Register()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IActionResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_AccountController_Register_" data-uid="MLinfo_v1._0.Controllers.AccountController.Register*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_AccountController_Register_MLinfo_v1__0_Models_ViewModels_RegisterViewModel_" data-uid="MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)">Register(RegisterViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Register(RegisterViewModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html">RegisterViewModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>

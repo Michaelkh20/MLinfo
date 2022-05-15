@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class OrganizationsController
+    <title>Class UsersController
    | ML Info Docs </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class OrganizationsController
+    <meta name="title" content="Class UsersController
    | ML Info Docs ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -78,35 +78,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MLinfo_v1._0.Controllers.OrganizationsController">
+            <article class="content wrap" id="_content" data-uid="MLinfo_v1._0.Controllers.UsersController">
   
   
-  <h1 id="MLinfo_v1__0_Controllers_OrganizationsController" data-uid="MLinfo_v1._0.Controllers.OrganizationsController" class="text-break">Class OrganizationsController
+  <h1 id="MLinfo_v1__0_Controllers_UsersController" data-uid="MLinfo_v1._0.Controllers.UsersController" class="text-break">Class UsersController
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">OrganizationsController</span></div>
+    <div class="level1"><span class="xref">UsersController</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MLinfo_v1._0.Controllers.html">MLinfo_v1._0.Controllers</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="MLinfo_v1__0_Controllers_OrganizationsController_syntax">Syntax</h5>
+  <h5 id="MLinfo_v1__0_Controllers_UsersController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OrganizationsController : Controller</code></pre>
+    <pre><code class="lang-csharp hljs">public class UsersController : Controller</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController__ctor_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.#ctor*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController__ctor_ApplicationDBContext_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.#ctor(ApplicationDBContext)">OrganizationsController(ApplicationDBContext)</h4>
+  <a id="MLinfo_v1__0_Controllers_UsersController__ctor_" data-uid="MLinfo_v1._0.Controllers.UsersController.#ctor*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController__ctor_UserManager_IdentityUser__" data-uid="MLinfo_v1._0.Controllers.UsersController.#ctor(UserManager{IdentityUser})">UsersController(UserManager&lt;IdentityUser&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OrganizationsController(ApplicationDBContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public UsersController(UserManager&lt;IdentityUser&gt; userManager)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,8 +119,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ApplicationDBContext</span></td>
-        <td><span class="parametername">context</span></td>
+        <td><span class="xref">UserManager</span>&lt;<span class="xref">IdentityUser</span>&gt;</td>
+        <td><span class="parametername">userManager</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -129,8 +129,92 @@
   </h3>
   
   
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Create_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Create*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Create" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Create">Create()</h4>
+  <a id="MLinfo_v1__0_Controllers_UsersController_ChangePassword_" data-uid="MLinfo_v1._0.Controllers.UsersController.ChangePassword*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_ChangePassword_MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_" data-uid="MLinfo_v1._0.Controllers.UsersController.ChangePassword(MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel)">ChangePassword(ChangePasswordViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; ChangePassword(ChangePasswordViewModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html">ChangePasswordViewModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_UsersController_ChangePassword_" data-uid="MLinfo_v1._0.Controllers.UsersController.ChangePassword*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_ChangePassword_System_String_" data-uid="MLinfo_v1._0.Controllers.UsersController.ChangePassword(System.String)">ChangePassword(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; ChangePassword(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_UsersController_Create_" data-uid="MLinfo_v1._0.Controllers.UsersController.Create*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_Create" data-uid="MLinfo_v1._0.Controllers.UsersController.Create">Create()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -154,13 +238,13 @@
   </table>
   
   
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Create_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Create*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Create_MLinfo_v1__0_Models_ViewModels_OrganizationSelectModel_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Create(MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel)">Create(OrganizationSelectModel)</h4>
+  <a id="MLinfo_v1__0_Controllers_UsersController_Create_" data-uid="MLinfo_v1._0.Controllers.UsersController.Create*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_Create_MLinfo_v1__0_Models_ViewModels_CreateUserViewModel_" data-uid="MLinfo_v1._0.Controllers.UsersController.Create(MLinfo_v1._0.Models.ViewModels.CreateUserViewModel)">Create(CreateUserViewModel)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Create(OrganizationSelectModel orgSM)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Create(CreateUserViewModel model)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,8 +257,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html">OrganizationSelectModel</a></td>
-        <td><span class="parametername">orgSM</span></td>
+        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html">CreateUserViewModel</a></td>
+        <td><span class="parametername">model</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -196,13 +280,13 @@
   </table>
   
   
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Delete_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Delete*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Delete_System_Nullable_System_Int32__" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Delete(System.Nullable{System.Int32})">Delete(Nullable&lt;Int32&gt;)</h4>
+  <a id="MLinfo_v1__0_Controllers_UsersController_Delete_" data-uid="MLinfo_v1._0.Controllers.UsersController.Delete*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_Delete_System_String_" data-uid="MLinfo_v1._0.Controllers.UsersController.Delete(System.String)">Delete(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Delete(int? id)</code></pre>
+    <pre><code class="lang-csharp hljs">public async Task&lt;ActionResult&gt; Delete(string id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,7 +299,91 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">ActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_UsersController_Edit_" data-uid="MLinfo_v1._0.Controllers.UsersController.Edit*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_Edit_MLinfo_v1__0_Models_ViewModels_EditUserViewModel_" data-uid="MLinfo_v1._0.Controllers.UsersController.Edit(MLinfo_v1._0.Models.ViewModels.EditUserViewModel)">Edit(EditUserViewModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Edit(EditUserViewModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html">EditUserViewModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MLinfo_v1__0_Controllers_UsersController_Edit_" data-uid="MLinfo_v1._0.Controllers.UsersController.Edit*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_Edit_System_String_" data-uid="MLinfo_v1._0.Controllers.UsersController.Edit(System.String)">Edit(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Edit(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
         <td><span class="parametername">id</span></td>
         <td></td>
       </tr>
@@ -238,186 +406,13 @@
   </table>
   
   
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_DeleteConfirmed_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.DeleteConfirmed*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_DeleteConfirmed_System_Int32_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.DeleteConfirmed(System.Int32)">DeleteConfirmed(Int32)</h4>
+  <a id="MLinfo_v1__0_Controllers_UsersController_Index_" data-uid="MLinfo_v1._0.Controllers.UsersController.Index*"></a>
+  <h4 id="MLinfo_v1__0_Controllers_UsersController_Index" data-uid="MLinfo_v1._0.Controllers.UsersController.Index">Index()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; DeleteConfirmed(int id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Details_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Details*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Details_System_Nullable_System_Int32__" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Details(System.Nullable{System.Int32})">Details(Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Details(int? id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Edit_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Edit*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Edit_System_Int32_MLinfo_v1__0_Models_ViewModels_OrganizationSelectModel_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Edit(System.Int32,MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel)">Edit(Int32, OrganizationSelectModel)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Edit(int id, OrganizationSelectModel orgSM)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html">OrganizationSelectModel</a></td>
-        <td><span class="parametername">orgSM</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Edit_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Edit*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Edit_System_Nullable_System_Int32__" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Edit(System.Nullable{System.Int32})">Edit(Nullable&lt;Int32&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Edit(int? id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="MLinfo_v1__0_Controllers_OrganizationsController_Index_" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Index*"></a>
-  <h4 id="MLinfo_v1__0_Controllers_OrganizationsController_Index" data-uid="MLinfo_v1._0.Controllers.OrganizationsController.Index">Index()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public async Task&lt;IActionResult&gt; Index()</code></pre>
+    <pre><code class="lang-csharp hljs">public IActionResult Index()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -429,7 +424,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</td>
+        <td><span class="xref">IActionResult</span></td>
         <td></td>
       </tr>
     </tbody>

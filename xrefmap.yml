@@ -7,17 +7,90 @@ references:
   commentId: N:MLinfo_v1._0.Controllers
   fullName: MLinfo_v1._0.Controllers
   nameWithType: MLinfo_v1._0.Controllers
+- uid: MLinfo_v1._0.Controllers.AccountController
+  name: AccountController
+  href: api/MLinfo_v1._0.Controllers.AccountController.html
+  commentId: T:MLinfo_v1._0.Controllers.AccountController
+  fullName: MLinfo_v1._0.Controllers.AccountController
+  nameWithType: AccountController
+- uid: MLinfo_v1._0.Controllers.AccountController.#ctor(UserManager{IdentityUser},SignInManager{IdentityUser})
+  name: AccountController(UserManager<IdentityUser>, SignInManager<IdentityUser>)
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController__ctor_UserManager_IdentityUser__SignInManager_IdentityUser__
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.#ctor(UserManager{IdentityUser},SignInManager{IdentityUser})
+  name.vb: AccountController(UserManager(Of IdentityUser), SignInManager(Of IdentityUser))
+  fullName: MLinfo_v1._0.Controllers.AccountController.AccountController(UserManager<IdentityUser>, SignInManager<IdentityUser>)
+  fullName.vb: MLinfo_v1._0.Controllers.AccountController.AccountController(UserManager(Of IdentityUser), SignInManager(Of IdentityUser))
+  nameWithType: AccountController.AccountController(UserManager<IdentityUser>, SignInManager<IdentityUser>)
+  nameWithType.vb: AccountController.AccountController(UserManager(Of IdentityUser), SignInManager(Of IdentityUser))
+- uid: MLinfo_v1._0.Controllers.AccountController.#ctor*
+  name: AccountController
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController__ctor_
+  commentId: Overload:MLinfo_v1._0.Controllers.AccountController.#ctor
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.AccountController.AccountController
+  nameWithType: AccountController.AccountController
+- uid: MLinfo_v1._0.Controllers.AccountController.Login(MLinfo_v1._0.Models.ViewModels.LoginViewModel)
+  name: Login(LoginViewModel)
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Login_MLinfo_v1__0_Models_ViewModels_LoginViewModel_
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.Login(MLinfo_v1._0.Models.ViewModels.LoginViewModel)
+  fullName: MLinfo_v1._0.Controllers.AccountController.Login(MLinfo_v1._0.Models.ViewModels.LoginViewModel)
+  nameWithType: AccountController.Login(LoginViewModel)
+- uid: MLinfo_v1._0.Controllers.AccountController.Login(System.String)
+  name: Login(String)
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Login_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.Login(System.String)
+  fullName: MLinfo_v1._0.Controllers.AccountController.Login(System.String)
+  nameWithType: AccountController.Login(String)
+- uid: MLinfo_v1._0.Controllers.AccountController.Login*
+  name: Login
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Login_
+  commentId: Overload:MLinfo_v1._0.Controllers.AccountController.Login
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.AccountController.Login
+  nameWithType: AccountController.Login
+- uid: MLinfo_v1._0.Controllers.AccountController.Logout
+  name: Logout()
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Logout
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.Logout
+  fullName: MLinfo_v1._0.Controllers.AccountController.Logout()
+  nameWithType: AccountController.Logout()
+- uid: MLinfo_v1._0.Controllers.AccountController.Logout*
+  name: Logout
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Logout_
+  commentId: Overload:MLinfo_v1._0.Controllers.AccountController.Logout
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.AccountController.Logout
+  nameWithType: AccountController.Logout
+- uid: MLinfo_v1._0.Controllers.AccountController.Register
+  name: Register()
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Register
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.Register
+  fullName: MLinfo_v1._0.Controllers.AccountController.Register()
+  nameWithType: AccountController.Register()
+- uid: MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)
+  name: Register(RegisterViewModel)
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Register_MLinfo_v1__0_Models_ViewModels_RegisterViewModel_
+  commentId: M:MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)
+  fullName: MLinfo_v1._0.Controllers.AccountController.Register(MLinfo_v1._0.Models.ViewModels.RegisterViewModel)
+  nameWithType: AccountController.Register(RegisterViewModel)
+- uid: MLinfo_v1._0.Controllers.AccountController.Register*
+  name: Register
+  href: api/MLinfo_v1._0.Controllers.AccountController.html#MLinfo_v1__0_Controllers_AccountController_Register_
+  commentId: Overload:MLinfo_v1._0.Controllers.AccountController.Register
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.AccountController.Register
+  nameWithType: AccountController.Register
 - uid: MLinfo_v1._0.Controllers.ArticlesController
   name: ArticlesController
   href: api/MLinfo_v1._0.Controllers.ArticlesController.html
   commentId: T:MLinfo_v1._0.Controllers.ArticlesController
   fullName: MLinfo_v1._0.Controllers.ArticlesController
   nameWithType: ArticlesController
-- uid: MLinfo_v1._0.Controllers.ArticlesController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.ArticlesController.#ctor(ApplicationDBContext)
   name: ArticlesController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.ArticlesController.html#MLinfo_v1__0_Controllers_ArticlesController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.ArticlesController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.ArticlesController.ArticlesController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.ArticlesController.html#MLinfo_v1__0_Controllers_ArticlesController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.ArticlesController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.ArticlesController.ArticlesController(ApplicationDBContext)
   nameWithType: ArticlesController.ArticlesController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.ArticlesController.#ctor*
   name: ArticlesController
@@ -131,11 +204,11 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.AuthorsController
   fullName: MLinfo_v1._0.Controllers.AuthorsController
   nameWithType: AuthorsController
-- uid: MLinfo_v1._0.Controllers.AuthorsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.AuthorsController.#ctor(ApplicationDBContext)
   name: AuthorsController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.AuthorsController.html#MLinfo_v1__0_Controllers_AuthorsController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.AuthorsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.AuthorsController.AuthorsController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.AuthorsController.html#MLinfo_v1__0_Controllers_AuthorsController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.AuthorsController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.AuthorsController.AuthorsController(ApplicationDBContext)
   nameWithType: AuthorsController.AuthorsController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.AuthorsController.#ctor*
   name: AuthorsController
@@ -249,11 +322,11 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.CountriesController
   fullName: MLinfo_v1._0.Controllers.CountriesController
   nameWithType: CountriesController
-- uid: MLinfo_v1._0.Controllers.CountriesController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.CountriesController.#ctor(ApplicationDBContext)
   name: CountriesController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.CountriesController.html#MLinfo_v1__0_Controllers_CountriesController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.CountriesController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.CountriesController.CountriesController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.CountriesController.html#MLinfo_v1__0_Controllers_CountriesController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.CountriesController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.CountriesController.CountriesController(ApplicationDBContext)
   nameWithType: CountriesController.CountriesController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.CountriesController.#ctor*
   name: CountriesController
@@ -268,11 +341,11 @@ references:
   commentId: M:MLinfo_v1._0.Controllers.CountriesController.Create
   fullName: MLinfo_v1._0.Controllers.CountriesController.Create()
   nameWithType: CountriesController.Create()
-- uid: MLinfo_v1._0.Controllers.CountriesController.Create(MLinfo_v1._0.Models.DatabasedModels.Country)
+- uid: MLinfo_v1._0.Controllers.CountriesController.Create(Country)
   name: Create(Country)
-  href: api/MLinfo_v1._0.Controllers.CountriesController.html#MLinfo_v1__0_Controllers_CountriesController_Create_MLinfo_v1__0_Models_DatabasedModels_Country_
-  commentId: M:MLinfo_v1._0.Controllers.CountriesController.Create(MLinfo_v1._0.Models.DatabasedModels.Country)
-  fullName: MLinfo_v1._0.Controllers.CountriesController.Create(MLinfo_v1._0.Models.DatabasedModels.Country)
+  href: api/MLinfo_v1._0.Controllers.CountriesController.html#MLinfo_v1__0_Controllers_CountriesController_Create_Country_
+  commentId: M:MLinfo_v1._0.Controllers.CountriesController.Create(Country)
+  fullName: MLinfo_v1._0.Controllers.CountriesController.Create(Country)
   nameWithType: CountriesController.Create(Country)
 - uid: MLinfo_v1._0.Controllers.CountriesController.Create*
   name: Create
@@ -326,11 +399,11 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.CountriesController.Details
   nameWithType: CountriesController.Details
-- uid: MLinfo_v1._0.Controllers.CountriesController.Edit(System.Int32,MLinfo_v1._0.Models.DatabasedModels.Country)
+- uid: MLinfo_v1._0.Controllers.CountriesController.Edit(System.Int32,Country)
   name: Edit(Int32, Country)
-  href: api/MLinfo_v1._0.Controllers.CountriesController.html#MLinfo_v1__0_Controllers_CountriesController_Edit_System_Int32_MLinfo_v1__0_Models_DatabasedModels_Country_
-  commentId: M:MLinfo_v1._0.Controllers.CountriesController.Edit(System.Int32,MLinfo_v1._0.Models.DatabasedModels.Country)
-  fullName: MLinfo_v1._0.Controllers.CountriesController.Edit(System.Int32, MLinfo_v1._0.Models.DatabasedModels.Country)
+  href: api/MLinfo_v1._0.Controllers.CountriesController.html#MLinfo_v1__0_Controllers_CountriesController_Edit_System_Int32_Country_
+  commentId: M:MLinfo_v1._0.Controllers.CountriesController.Edit(System.Int32,Country)
+  fullName: MLinfo_v1._0.Controllers.CountriesController.Edit(System.Int32, Country)
   nameWithType: CountriesController.Edit(Int32, Country)
 - uid: MLinfo_v1._0.Controllers.CountriesController.Edit(System.Nullable{System.Int32})
   name: Edit(Nullable<Int32>)
@@ -428,11 +501,11 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.KeywordsController
   fullName: MLinfo_v1._0.Controllers.KeywordsController
   nameWithType: KeywordsController
-- uid: MLinfo_v1._0.Controllers.KeywordsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.KeywordsController.#ctor(ApplicationDBContext)
   name: KeywordsController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.KeywordsController.html#MLinfo_v1__0_Controllers_KeywordsController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.KeywordsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.KeywordsController.KeywordsController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.KeywordsController.html#MLinfo_v1__0_Controllers_KeywordsController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.KeywordsController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.KeywordsController.KeywordsController(ApplicationDBContext)
   nameWithType: KeywordsController.KeywordsController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.KeywordsController.#ctor*
   name: KeywordsController
@@ -447,11 +520,11 @@ references:
   commentId: M:MLinfo_v1._0.Controllers.KeywordsController.Create
   fullName: MLinfo_v1._0.Controllers.KeywordsController.Create()
   nameWithType: KeywordsController.Create()
-- uid: MLinfo_v1._0.Controllers.KeywordsController.Create(MLinfo_v1._0.Models.DatabasedModels.Keyword)
+- uid: MLinfo_v1._0.Controllers.KeywordsController.Create(Keyword)
   name: Create(Keyword)
-  href: api/MLinfo_v1._0.Controllers.KeywordsController.html#MLinfo_v1__0_Controllers_KeywordsController_Create_MLinfo_v1__0_Models_DatabasedModels_Keyword_
-  commentId: M:MLinfo_v1._0.Controllers.KeywordsController.Create(MLinfo_v1._0.Models.DatabasedModels.Keyword)
-  fullName: MLinfo_v1._0.Controllers.KeywordsController.Create(MLinfo_v1._0.Models.DatabasedModels.Keyword)
+  href: api/MLinfo_v1._0.Controllers.KeywordsController.html#MLinfo_v1__0_Controllers_KeywordsController_Create_Keyword_
+  commentId: M:MLinfo_v1._0.Controllers.KeywordsController.Create(Keyword)
+  fullName: MLinfo_v1._0.Controllers.KeywordsController.Create(Keyword)
   nameWithType: KeywordsController.Create(Keyword)
 - uid: MLinfo_v1._0.Controllers.KeywordsController.Create*
   name: Create
@@ -505,11 +578,11 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.KeywordsController.Details
   nameWithType: KeywordsController.Details
-- uid: MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Int32,MLinfo_v1._0.Models.DatabasedModels.Keyword)
+- uid: MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Int32,Keyword)
   name: Edit(Int32, Keyword)
-  href: api/MLinfo_v1._0.Controllers.KeywordsController.html#MLinfo_v1__0_Controllers_KeywordsController_Edit_System_Int32_MLinfo_v1__0_Models_DatabasedModels_Keyword_
-  commentId: M:MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Int32,MLinfo_v1._0.Models.DatabasedModels.Keyword)
-  fullName: MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Int32, MLinfo_v1._0.Models.DatabasedModels.Keyword)
+  href: api/MLinfo_v1._0.Controllers.KeywordsController.html#MLinfo_v1__0_Controllers_KeywordsController_Edit_System_Int32_Keyword_
+  commentId: M:MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Int32,Keyword)
+  fullName: MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Int32, Keyword)
   nameWithType: KeywordsController.Edit(Int32, Keyword)
 - uid: MLinfo_v1._0.Controllers.KeywordsController.Edit(System.Nullable{System.Int32})
   name: Edit(Nullable<Int32>)
@@ -546,11 +619,11 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.LanguagesController
   fullName: MLinfo_v1._0.Controllers.LanguagesController
   nameWithType: LanguagesController
-- uid: MLinfo_v1._0.Controllers.LanguagesController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.LanguagesController.#ctor(ApplicationDBContext)
   name: LanguagesController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.LanguagesController.html#MLinfo_v1__0_Controllers_LanguagesController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.LanguagesController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.LanguagesController.LanguagesController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.LanguagesController.html#MLinfo_v1__0_Controllers_LanguagesController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.LanguagesController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.LanguagesController.LanguagesController(ApplicationDBContext)
   nameWithType: LanguagesController.LanguagesController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.LanguagesController.#ctor*
   name: LanguagesController
@@ -664,11 +737,11 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.MLMethodsController
   fullName: MLinfo_v1._0.Controllers.MLMethodsController
   nameWithType: MLMethodsController
-- uid: MLinfo_v1._0.Controllers.MLMethodsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.MLMethodsController.#ctor(ApplicationDBContext)
   name: MLMethodsController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.MLMethodsController.html#MLinfo_v1__0_Controllers_MLMethodsController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.MLMethodsController.MLMethodsController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.MLMethodsController.html#MLinfo_v1__0_Controllers_MLMethodsController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.MLMethodsController.MLMethodsController(ApplicationDBContext)
   nameWithType: MLMethodsController.MLMethodsController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.MLMethodsController.#ctor*
   name: MLMethodsController
@@ -683,11 +756,11 @@ references:
   commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.Create
   fullName: MLinfo_v1._0.Controllers.MLMethodsController.Create()
   nameWithType: MLMethodsController.Create()
-- uid: MLinfo_v1._0.Controllers.MLMethodsController.Create(MLinfo_v1._0.Models.DatabasedModels.MLMethod)
+- uid: MLinfo_v1._0.Controllers.MLMethodsController.Create(MLMethod)
   name: Create(MLMethod)
-  href: api/MLinfo_v1._0.Controllers.MLMethodsController.html#MLinfo_v1__0_Controllers_MLMethodsController_Create_MLinfo_v1__0_Models_DatabasedModels_MLMethod_
-  commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.Create(MLinfo_v1._0.Models.DatabasedModels.MLMethod)
-  fullName: MLinfo_v1._0.Controllers.MLMethodsController.Create(MLinfo_v1._0.Models.DatabasedModels.MLMethod)
+  href: api/MLinfo_v1._0.Controllers.MLMethodsController.html#MLinfo_v1__0_Controllers_MLMethodsController_Create_MLMethod_
+  commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.Create(MLMethod)
+  fullName: MLinfo_v1._0.Controllers.MLMethodsController.Create(MLMethod)
   nameWithType: MLMethodsController.Create(MLMethod)
 - uid: MLinfo_v1._0.Controllers.MLMethodsController.Create*
   name: Create
@@ -741,11 +814,11 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.MLMethodsController.Details
   nameWithType: MLMethodsController.Details
-- uid: MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Int32,MLinfo_v1._0.Models.DatabasedModels.MLMethod)
+- uid: MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Int32,MLMethod)
   name: Edit(Int32, MLMethod)
-  href: api/MLinfo_v1._0.Controllers.MLMethodsController.html#MLinfo_v1__0_Controllers_MLMethodsController_Edit_System_Int32_MLinfo_v1__0_Models_DatabasedModels_MLMethod_
-  commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Int32,MLinfo_v1._0.Models.DatabasedModels.MLMethod)
-  fullName: MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Int32, MLinfo_v1._0.Models.DatabasedModels.MLMethod)
+  href: api/MLinfo_v1._0.Controllers.MLMethodsController.html#MLinfo_v1__0_Controllers_MLMethodsController_Edit_System_Int32_MLMethod_
+  commentId: M:MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Int32,MLMethod)
+  fullName: MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Int32, MLMethod)
   nameWithType: MLMethodsController.Edit(Int32, MLMethod)
 - uid: MLinfo_v1._0.Controllers.MLMethodsController.Edit(System.Nullable{System.Int32})
   name: Edit(Nullable<Int32>)
@@ -782,11 +855,11 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.OrganizationsController
   fullName: MLinfo_v1._0.Controllers.OrganizationsController
   nameWithType: OrganizationsController
-- uid: MLinfo_v1._0.Controllers.OrganizationsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
+- uid: MLinfo_v1._0.Controllers.OrganizationsController.#ctor(ApplicationDBContext)
   name: OrganizationsController(ApplicationDBContext)
-  href: api/MLinfo_v1._0.Controllers.OrganizationsController.html#MLinfo_v1__0_Controllers_OrganizationsController__ctor_MLinfo_v1__0_Data_ApplicationDBContext_
-  commentId: M:MLinfo_v1._0.Controllers.OrganizationsController.#ctor(MLinfo_v1._0.Data.ApplicationDBContext)
-  fullName: MLinfo_v1._0.Controllers.OrganizationsController.OrganizationsController(MLinfo_v1._0.Data.ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.OrganizationsController.html#MLinfo_v1__0_Controllers_OrganizationsController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.OrganizationsController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.OrganizationsController.OrganizationsController(ApplicationDBContext)
   nameWithType: OrganizationsController.OrganizationsController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.OrganizationsController.#ctor*
   name: OrganizationsController
@@ -894,6 +967,232 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.OrganizationsController.Index
   nameWithType: OrganizationsController.Index
+- uid: MLinfo_v1._0.Controllers.RolesController
+  name: RolesController
+  href: api/MLinfo_v1._0.Controllers.RolesController.html
+  commentId: T:MLinfo_v1._0.Controllers.RolesController
+  fullName: MLinfo_v1._0.Controllers.RolesController
+  nameWithType: RolesController
+- uid: MLinfo_v1._0.Controllers.RolesController.#ctor(RoleManager{IdentityRole},UserManager{IdentityUser})
+  name: RolesController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController__ctor_RoleManager_IdentityRole__UserManager_IdentityUser__
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.#ctor(RoleManager{IdentityRole},UserManager{IdentityUser})
+  name.vb: RolesController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
+  fullName: MLinfo_v1._0.Controllers.RolesController.RolesController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
+  fullName.vb: MLinfo_v1._0.Controllers.RolesController.RolesController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
+  nameWithType: RolesController.RolesController(RoleManager<IdentityRole>, UserManager<IdentityUser>)
+  nameWithType.vb: RolesController.RolesController(RoleManager(Of IdentityRole), UserManager(Of IdentityUser))
+- uid: MLinfo_v1._0.Controllers.RolesController.#ctor*
+  name: RolesController
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController__ctor_
+  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.#ctor
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.RolesController.RolesController
+  nameWithType: RolesController.RolesController
+- uid: MLinfo_v1._0.Controllers.RolesController.Create
+  name: Create()
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Create
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.Create
+  fullName: MLinfo_v1._0.Controllers.RolesController.Create()
+  nameWithType: RolesController.Create()
+- uid: MLinfo_v1._0.Controllers.RolesController.Create(System.String)
+  name: Create(String)
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Create_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.Create(System.String)
+  fullName: MLinfo_v1._0.Controllers.RolesController.Create(System.String)
+  nameWithType: RolesController.Create(String)
+- uid: MLinfo_v1._0.Controllers.RolesController.Create*
+  name: Create
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Create_
+  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Create
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.RolesController.Create
+  nameWithType: RolesController.Create
+- uid: MLinfo_v1._0.Controllers.RolesController.Delete(System.String)
+  name: Delete(String)
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Delete_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.Delete(System.String)
+  fullName: MLinfo_v1._0.Controllers.RolesController.Delete(System.String)
+  nameWithType: RolesController.Delete(String)
+- uid: MLinfo_v1._0.Controllers.RolesController.Delete*
+  name: Delete
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Delete_
+  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Delete
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.RolesController.Delete
+  nameWithType: RolesController.Delete
+- uid: MLinfo_v1._0.Controllers.RolesController.Edit(System.String)
+  name: Edit(String)
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Edit_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.Edit(System.String)
+  fullName: MLinfo_v1._0.Controllers.RolesController.Edit(System.String)
+  nameWithType: RolesController.Edit(String)
+- uid: MLinfo_v1._0.Controllers.RolesController.Edit(System.String,List{System.String})
+  name: Edit(String, List<String>)
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Edit_System_String_List_System_String__
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.Edit(System.String,List{System.String})
+  name.vb: Edit(String, List(Of String))
+  fullName: MLinfo_v1._0.Controllers.RolesController.Edit(System.String, List<System.String>)
+  fullName.vb: MLinfo_v1._0.Controllers.RolesController.Edit(System.String, List(Of System.String))
+  nameWithType: RolesController.Edit(String, List<String>)
+  nameWithType.vb: RolesController.Edit(String, List(Of String))
+- uid: MLinfo_v1._0.Controllers.RolesController.Edit*
+  name: Edit
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Edit_
+  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Edit
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.RolesController.Edit
+  nameWithType: RolesController.Edit
+- uid: MLinfo_v1._0.Controllers.RolesController.Index
+  name: Index()
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Index
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.Index
+  fullName: MLinfo_v1._0.Controllers.RolesController.Index()
+  nameWithType: RolesController.Index()
+- uid: MLinfo_v1._0.Controllers.RolesController.Index*
+  name: Index
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_Index_
+  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.Index
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.RolesController.Index
+  nameWithType: RolesController.Index
+- uid: MLinfo_v1._0.Controllers.RolesController.UserList
+  name: UserList()
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_UserList
+  commentId: M:MLinfo_v1._0.Controllers.RolesController.UserList
+  fullName: MLinfo_v1._0.Controllers.RolesController.UserList()
+  nameWithType: RolesController.UserList()
+- uid: MLinfo_v1._0.Controllers.RolesController.UserList*
+  name: UserList
+  href: api/MLinfo_v1._0.Controllers.RolesController.html#MLinfo_v1__0_Controllers_RolesController_UserList_
+  commentId: Overload:MLinfo_v1._0.Controllers.RolesController.UserList
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.RolesController.UserList
+  nameWithType: RolesController.UserList
+- uid: MLinfo_v1._0.Controllers.UserHomeController
+  name: UserHomeController
+  href: api/MLinfo_v1._0.Controllers.UserHomeController.html
+  commentId: T:MLinfo_v1._0.Controllers.UserHomeController
+  fullName: MLinfo_v1._0.Controllers.UserHomeController
+  nameWithType: UserHomeController
+- uid: MLinfo_v1._0.Controllers.UserHomeController.Index
+  name: Index()
+  href: api/MLinfo_v1._0.Controllers.UserHomeController.html#MLinfo_v1__0_Controllers_UserHomeController_Index
+  commentId: M:MLinfo_v1._0.Controllers.UserHomeController.Index
+  fullName: MLinfo_v1._0.Controllers.UserHomeController.Index()
+  nameWithType: UserHomeController.Index()
+- uid: MLinfo_v1._0.Controllers.UserHomeController.Index*
+  name: Index
+  href: api/MLinfo_v1._0.Controllers.UserHomeController.html#MLinfo_v1__0_Controllers_UserHomeController_Index_
+  commentId: Overload:MLinfo_v1._0.Controllers.UserHomeController.Index
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UserHomeController.Index
+  nameWithType: UserHomeController.Index
+- uid: MLinfo_v1._0.Controllers.UsersController
+  name: UsersController
+  href: api/MLinfo_v1._0.Controllers.UsersController.html
+  commentId: T:MLinfo_v1._0.Controllers.UsersController
+  fullName: MLinfo_v1._0.Controllers.UsersController
+  nameWithType: UsersController
+- uid: MLinfo_v1._0.Controllers.UsersController.#ctor(UserManager{IdentityUser})
+  name: UsersController(UserManager<IdentityUser>)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController__ctor_UserManager_IdentityUser__
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.#ctor(UserManager{IdentityUser})
+  name.vb: UsersController(UserManager(Of IdentityUser))
+  fullName: MLinfo_v1._0.Controllers.UsersController.UsersController(UserManager<IdentityUser>)
+  fullName.vb: MLinfo_v1._0.Controllers.UsersController.UsersController(UserManager(Of IdentityUser))
+  nameWithType: UsersController.UsersController(UserManager<IdentityUser>)
+  nameWithType.vb: UsersController.UsersController(UserManager(Of IdentityUser))
+- uid: MLinfo_v1._0.Controllers.UsersController.#ctor*
+  name: UsersController
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController__ctor_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.#ctor
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.UsersController
+  nameWithType: UsersController.UsersController
+- uid: MLinfo_v1._0.Controllers.UsersController.ChangePassword(MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel)
+  name: ChangePassword(ChangePasswordViewModel)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_ChangePassword_MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.ChangePassword(MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel)
+  fullName: MLinfo_v1._0.Controllers.UsersController.ChangePassword(MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel)
+  nameWithType: UsersController.ChangePassword(ChangePasswordViewModel)
+- uid: MLinfo_v1._0.Controllers.UsersController.ChangePassword(System.String)
+  name: ChangePassword(String)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_ChangePassword_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.ChangePassword(System.String)
+  fullName: MLinfo_v1._0.Controllers.UsersController.ChangePassword(System.String)
+  nameWithType: UsersController.ChangePassword(String)
+- uid: MLinfo_v1._0.Controllers.UsersController.ChangePassword*
+  name: ChangePassword
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_ChangePassword_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.ChangePassword
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.ChangePassword
+  nameWithType: UsersController.ChangePassword
+- uid: MLinfo_v1._0.Controllers.UsersController.Create
+  name: Create()
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Create
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.Create
+  fullName: MLinfo_v1._0.Controllers.UsersController.Create()
+  nameWithType: UsersController.Create()
+- uid: MLinfo_v1._0.Controllers.UsersController.Create(MLinfo_v1._0.Models.ViewModels.CreateUserViewModel)
+  name: Create(CreateUserViewModel)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Create_MLinfo_v1__0_Models_ViewModels_CreateUserViewModel_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.Create(MLinfo_v1._0.Models.ViewModels.CreateUserViewModel)
+  fullName: MLinfo_v1._0.Controllers.UsersController.Create(MLinfo_v1._0.Models.ViewModels.CreateUserViewModel)
+  nameWithType: UsersController.Create(CreateUserViewModel)
+- uid: MLinfo_v1._0.Controllers.UsersController.Create*
+  name: Create
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Create_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.Create
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.Create
+  nameWithType: UsersController.Create
+- uid: MLinfo_v1._0.Controllers.UsersController.Delete(System.String)
+  name: Delete(String)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Delete_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.Delete(System.String)
+  fullName: MLinfo_v1._0.Controllers.UsersController.Delete(System.String)
+  nameWithType: UsersController.Delete(String)
+- uid: MLinfo_v1._0.Controllers.UsersController.Delete*
+  name: Delete
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Delete_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.Delete
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.Delete
+  nameWithType: UsersController.Delete
+- uid: MLinfo_v1._0.Controllers.UsersController.Edit(MLinfo_v1._0.Models.ViewModels.EditUserViewModel)
+  name: Edit(EditUserViewModel)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Edit_MLinfo_v1__0_Models_ViewModels_EditUserViewModel_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.Edit(MLinfo_v1._0.Models.ViewModels.EditUserViewModel)
+  fullName: MLinfo_v1._0.Controllers.UsersController.Edit(MLinfo_v1._0.Models.ViewModels.EditUserViewModel)
+  nameWithType: UsersController.Edit(EditUserViewModel)
+- uid: MLinfo_v1._0.Controllers.UsersController.Edit(System.String)
+  name: Edit(String)
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Edit_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.Edit(System.String)
+  fullName: MLinfo_v1._0.Controllers.UsersController.Edit(System.String)
+  nameWithType: UsersController.Edit(String)
+- uid: MLinfo_v1._0.Controllers.UsersController.Edit*
+  name: Edit
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Edit_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.Edit
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.Edit
+  nameWithType: UsersController.Edit
+- uid: MLinfo_v1._0.Controllers.UsersController.Index
+  name: Index()
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Index
+  commentId: M:MLinfo_v1._0.Controllers.UsersController.Index
+  fullName: MLinfo_v1._0.Controllers.UsersController.Index()
+  nameWithType: UsersController.Index()
+- uid: MLinfo_v1._0.Controllers.UsersController.Index*
+  name: Index
+  href: api/MLinfo_v1._0.Controllers.UsersController.html#MLinfo_v1__0_Controllers_UsersController_Index_
+  commentId: Overload:MLinfo_v1._0.Controllers.UsersController.Index
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Controllers.UsersController.Index
+  nameWithType: UsersController.Index
 - uid: MLinfo_v1._0.Data
   name: MLinfo_v1._0.Data
   href: api/MLinfo_v1._0.Data.html
@@ -1845,11 +2144,11 @@ references:
   commentId: M:MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.#ctor
   fullName: MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.ArticleSelectModel()
   nameWithType: ArticleSelectModel.ArticleSelectModel()
-- uid: MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.#ctor(MLinfo_v1._0.Models.DatabasedModels.Article)
+- uid: MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.#ctor(Article)
   name: ArticleSelectModel(Article)
-  href: api/MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.html#MLinfo_v1__0_Models_ViewModels_ArticleSelectModel__ctor_MLinfo_v1__0_Models_DatabasedModels_Article_
-  commentId: M:MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.#ctor(MLinfo_v1._0.Models.DatabasedModels.Article)
-  fullName: MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.ArticleSelectModel(MLinfo_v1._0.Models.DatabasedModels.Article)
+  href: api/MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.html#MLinfo_v1__0_Models_ViewModels_ArticleSelectModel__ctor_Article_
+  commentId: M:MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.#ctor(Article)
+  fullName: MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.ArticleSelectModel(Article)
   nameWithType: ArticleSelectModel.ArticleSelectModel(Article)
 - uid: MLinfo_v1._0.Models.ViewModels.ArticleSelectModel.#ctor*
   name: ArticleSelectModel
@@ -1961,11 +2260,11 @@ references:
   commentId: M:MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.#ctor
   fullName: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.AuthorSelectModel()
   nameWithType: AuthorSelectModel.AuthorSelectModel()
-- uid: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.#ctor(MLinfo_v1._0.Models.DatabasedModels.Author)
+- uid: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.#ctor(Author)
   name: AuthorSelectModel(Author)
-  href: api/MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.html#MLinfo_v1__0_Models_ViewModels_AuthorSelectModel__ctor_MLinfo_v1__0_Models_DatabasedModels_Author_
-  commentId: M:MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.#ctor(MLinfo_v1._0.Models.DatabasedModels.Author)
-  fullName: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.AuthorSelectModel(MLinfo_v1._0.Models.DatabasedModels.Author)
+  href: api/MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.html#MLinfo_v1__0_Models_ViewModels_AuthorSelectModel__ctor_Author_
+  commentId: M:MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.#ctor(Author)
+  fullName: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.AuthorSelectModel(Author)
   nameWithType: AuthorSelectModel.AuthorSelectModel(Author)
 - uid: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.#ctor*
   name: AuthorSelectModel
@@ -2013,6 +2312,244 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Models.ViewModels.AuthorSelectModel.SelectedOrgIds
   nameWithType: AuthorSelectModel.SelectedOrgIds
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel
+  name: ChangePasswordViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html
+  commentId: T:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel
+  nameWithType: ChangePasswordViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Email
+  name: Email
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_Email
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Email
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Email
+  nameWithType: ChangePasswordViewModel.Email
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Email*
+  name: Email
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_Email_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Email
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Email
+  nameWithType: ChangePasswordViewModel.Email
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Id
+  name: Id
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_Id
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Id
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Id
+  nameWithType: ChangePasswordViewModel.Id
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Id*
+  name: Id
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_Id_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Id
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.Id
+  nameWithType: ChangePasswordViewModel.Id
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.NewPassword
+  name: NewPassword
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_NewPassword
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.NewPassword
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.NewPassword
+  nameWithType: ChangePasswordViewModel.NewPassword
+- uid: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.NewPassword*
+  name: NewPassword
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangePasswordViewModel_NewPassword_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.NewPassword
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangePasswordViewModel.NewPassword
+  nameWithType: ChangePasswordViewModel.NewPassword
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel
+  name: ChangeRoleViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html
+  commentId: T:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel
+  nameWithType: ChangeRoleViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.#ctor
+  name: ChangeRoleViewModel()
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel__ctor
+  commentId: M:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.#ctor
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.ChangeRoleViewModel()
+  nameWithType: ChangeRoleViewModel.ChangeRoleViewModel()
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.#ctor*
+  name: ChangeRoleViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel__ctor_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.#ctor
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.ChangeRoleViewModel
+  nameWithType: ChangeRoleViewModel.ChangeRoleViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.AllRoles
+  name: AllRoles
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_AllRoles
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.AllRoles
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.AllRoles
+  nameWithType: ChangeRoleViewModel.AllRoles
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.AllRoles*
+  name: AllRoles
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_AllRoles_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.AllRoles
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.AllRoles
+  nameWithType: ChangeRoleViewModel.AllRoles
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserEmail
+  name: UserEmail
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_UserEmail
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserEmail
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserEmail
+  nameWithType: ChangeRoleViewModel.UserEmail
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserEmail*
+  name: UserEmail
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_UserEmail_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserEmail
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserEmail
+  nameWithType: ChangeRoleViewModel.UserEmail
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserId
+  name: UserId
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_UserId
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserId
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserId
+  nameWithType: ChangeRoleViewModel.UserId
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserId*
+  name: UserId
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_UserId_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserId
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserId
+  nameWithType: ChangeRoleViewModel.UserId
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserRoles
+  name: UserRoles
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_UserRoles
+  commentId: P:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserRoles
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserRoles
+  nameWithType: ChangeRoleViewModel.UserRoles
+- uid: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserRoles*
+  name: UserRoles
+  href: api/MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.html#MLinfo_v1__0_Models_ViewModels_ChangeRoleViewModel_UserRoles_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserRoles
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.ChangeRoleViewModel.UserRoles
+  nameWithType: ChangeRoleViewModel.UserRoles
+- uid: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel
+  name: CreateUserViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html
+  commentId: T:MLinfo_v1._0.Models.ViewModels.CreateUserViewModel
+  fullName: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel
+  nameWithType: CreateUserViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Password
+  name: Password
+  href: api/MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html#MLinfo_v1__0_Models_ViewModels_CreateUserViewModel_Password
+  commentId: P:MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Password
+  fullName: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Password
+  nameWithType: CreateUserViewModel.Password
+- uid: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Password*
+  name: Password
+  href: api/MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html#MLinfo_v1__0_Models_ViewModels_CreateUserViewModel_Password_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Password
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Password
+  nameWithType: CreateUserViewModel.Password
+- uid: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Username
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html#MLinfo_v1__0_Models_ViewModels_CreateUserViewModel_Username
+  commentId: P:MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Username
+  fullName: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Username
+  nameWithType: CreateUserViewModel.Username
+- uid: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Username*
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.html#MLinfo_v1__0_Models_ViewModels_CreateUserViewModel_Username_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Username
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.CreateUserViewModel.Username
+  nameWithType: CreateUserViewModel.Username
+- uid: MLinfo_v1._0.Models.ViewModels.EditUserViewModel
+  name: EditUserViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html
+  commentId: T:MLinfo_v1._0.Models.ViewModels.EditUserViewModel
+  fullName: MLinfo_v1._0.Models.ViewModels.EditUserViewModel
+  nameWithType: EditUserViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Id
+  name: Id
+  href: api/MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html#MLinfo_v1__0_Models_ViewModels_EditUserViewModel_Id
+  commentId: P:MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Id
+  fullName: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Id
+  nameWithType: EditUserViewModel.Id
+- uid: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Id*
+  name: Id
+  href: api/MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html#MLinfo_v1__0_Models_ViewModels_EditUserViewModel_Id_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Id
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Id
+  nameWithType: EditUserViewModel.Id
+- uid: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Username
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html#MLinfo_v1__0_Models_ViewModels_EditUserViewModel_Username
+  commentId: P:MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Username
+  fullName: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Username
+  nameWithType: EditUserViewModel.Username
+- uid: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Username*
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.EditUserViewModel.html#MLinfo_v1__0_Models_ViewModels_EditUserViewModel_Username_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Username
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.EditUserViewModel.Username
+  nameWithType: EditUserViewModel.Username
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel
+  name: LoginViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html
+  commentId: T:MLinfo_v1._0.Models.ViewModels.LoginViewModel
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel
+  nameWithType: LoginViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Password
+  name: Password
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_Password
+  commentId: P:MLinfo_v1._0.Models.ViewModels.LoginViewModel.Password
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Password
+  nameWithType: LoginViewModel.Password
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Password*
+  name: Password
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_Password_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.LoginViewModel.Password
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Password
+  nameWithType: LoginViewModel.Password
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.RememberMe
+  name: RememberMe
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_RememberMe
+  commentId: P:MLinfo_v1._0.Models.ViewModels.LoginViewModel.RememberMe
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.RememberMe
+  nameWithType: LoginViewModel.RememberMe
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.RememberMe*
+  name: RememberMe
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_RememberMe_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.LoginViewModel.RememberMe
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.RememberMe
+  nameWithType: LoginViewModel.RememberMe
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.ReturnUrl
+  name: ReturnUrl
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_ReturnUrl
+  commentId: P:MLinfo_v1._0.Models.ViewModels.LoginViewModel.ReturnUrl
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.ReturnUrl
+  nameWithType: LoginViewModel.ReturnUrl
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.ReturnUrl*
+  name: ReturnUrl
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_ReturnUrl_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.LoginViewModel.ReturnUrl
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.ReturnUrl
+  nameWithType: LoginViewModel.ReturnUrl
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Username
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_Username
+  commentId: P:MLinfo_v1._0.Models.ViewModels.LoginViewModel.Username
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Username
+  nameWithType: LoginViewModel.Username
+- uid: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Username*
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.LoginViewModel.html#MLinfo_v1__0_Models_ViewModels_LoginViewModel_Username_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.LoginViewModel.Username
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.LoginViewModel.Username
+  nameWithType: LoginViewModel.Username
 - uid: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel
   name: OrganizationSelectModel
   href: api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html
@@ -2025,11 +2562,11 @@ references:
   commentId: M:MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.#ctor
   fullName: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.OrganizationSelectModel()
   nameWithType: OrganizationSelectModel.OrganizationSelectModel()
-- uid: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.#ctor(MLinfo_v1._0.Models.DatabasedModels.Organization)
+- uid: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.#ctor(Organization)
   name: OrganizationSelectModel(Organization)
-  href: api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html#MLinfo_v1__0_Models_ViewModels_OrganizationSelectModel__ctor_MLinfo_v1__0_Models_DatabasedModels_Organization_
-  commentId: M:MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.#ctor(MLinfo_v1._0.Models.DatabasedModels.Organization)
-  fullName: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.OrganizationSelectModel(MLinfo_v1._0.Models.DatabasedModels.Organization)
+  href: api/MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.html#MLinfo_v1__0_Models_ViewModels_OrganizationSelectModel__ctor_Organization_
+  commentId: M:MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.#ctor(Organization)
+  fullName: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.OrganizationSelectModel(Organization)
   nameWithType: OrganizationSelectModel.OrganizationSelectModel(Organization)
 - uid: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.#ctor*
   name: OrganizationSelectModel
@@ -2064,3 +2601,48 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Models.ViewModels.OrganizationSelectModel.OrganizationDB
   nameWithType: OrganizationSelectModel.OrganizationDB
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel
+  name: RegisterViewModel
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html
+  commentId: T:MLinfo_v1._0.Models.ViewModels.RegisterViewModel
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel
+  nameWithType: RegisterViewModel
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Password
+  name: Password
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html#MLinfo_v1__0_Models_ViewModels_RegisterViewModel_Password
+  commentId: P:MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Password
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Password
+  nameWithType: RegisterViewModel.Password
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Password*
+  name: Password
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html#MLinfo_v1__0_Models_ViewModels_RegisterViewModel_Password_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Password
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Password
+  nameWithType: RegisterViewModel.Password
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.PasswordConfirm
+  name: PasswordConfirm
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html#MLinfo_v1__0_Models_ViewModels_RegisterViewModel_PasswordConfirm
+  commentId: P:MLinfo_v1._0.Models.ViewModels.RegisterViewModel.PasswordConfirm
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.PasswordConfirm
+  nameWithType: RegisterViewModel.PasswordConfirm
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.PasswordConfirm*
+  name: PasswordConfirm
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html#MLinfo_v1__0_Models_ViewModels_RegisterViewModel_PasswordConfirm_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.RegisterViewModel.PasswordConfirm
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.PasswordConfirm
+  nameWithType: RegisterViewModel.PasswordConfirm
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Username
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html#MLinfo_v1__0_Models_ViewModels_RegisterViewModel_Username
+  commentId: P:MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Username
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Username
+  nameWithType: RegisterViewModel.Username
+- uid: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Username*
+  name: Username
+  href: api/MLinfo_v1._0.Models.ViewModels.RegisterViewModel.html#MLinfo_v1__0_Models_ViewModels_RegisterViewModel_Username_
+  commentId: Overload:MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Username
+  isSpec: "True"
+  fullName: MLinfo_v1._0.Models.ViewModels.RegisterViewModel.Username
+  nameWithType: RegisterViewModel.Username
