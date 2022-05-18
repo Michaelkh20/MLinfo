@@ -1,8 +1,107 @@
-﻿@{
+﻿@using MLinfo_v1._0.Models.DatabasedModels
+@model IEnumerable<Article>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+<div>
+    <h1 class="display-5">Welcome</h1>
+
+    <form asp-controller="Home" asp-action="Index" method="get">
+        <p class="d-flex">
+            <input class="form-control me-sm-2" type="text" placeholder="Search" style="width:50%" name="SearchString">
+            <select class="form-select mx-3" style="width:12%" name="SearchBy">
+                <option disabled="disabled">Search by</option>
+                <option value="Title">Article title</option>
+                <option value="Author">Author name</option>
+                <option value="Keyword">Keyword</option>
+                <option value="MLMethod">ML-Method</option>
+                <option value="DOI">DOI</option>
+            </select>
+            <button class="btn btn-primary my-2 my-sm-0 " type="submit">Search</button>
+        </p>
+    </form>
+
+    @if ((Model == null) || (Model.Count() == 0))
+    {
+        <p class="lead text-warning">Unfortunately, nothing was found for your request.</p>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TitleE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.AuthorsE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.SourceE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Year)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.VolumeE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Issue)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PagesE)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Doie)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Methods)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Keywords)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var article in Model)
+                {
+                    <tr>
+                        <td>
+                            @article.TitleE
+                        </td>
+                        <td>
+                            @article.AuthorsE
+                        </td>
+                        <td>
+                            @article.SourceE
+                        </td>
+                        <td>
+                            @article.Year
+                        </td>
+                        <td>
+                            @article.VolumeE
+                        </td>
+                        <td>
+                            @article.Issue
+                        </td>
+                        <td>
+                            @article.PagesE
+                        </td>
+                        <td>
+                            @article.Doie
+                        </td>
+                        <td>
+                            @article.MethodsToString()
+                        </td>
+                        <td>
+                            @article.KeywordsToString()
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
 
 </div>

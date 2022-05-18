@@ -68,7 +68,7 @@ namespace MLinfo_v1._0.Controllers
 
                 FillOrganizationCollectionsDB(org, orgSM);
 
-                _context.Add(orgSM);
+                _context.OrganizationsInfos.Add(org);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

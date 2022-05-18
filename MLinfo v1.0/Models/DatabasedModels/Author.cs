@@ -21,10 +21,10 @@ namespace MLinfo_v1._0.Models.DatabasedModels
         public string? NameR { get; set; }
 
         [ValidateNever]
-        public virtual List<Organization>? Organizations { get; set; } = new();
+        public virtual List<Organization> Organizations { get; set; } = new();
 
         [ValidateNever]
-        public virtual List<Article>? Articles { get; set; } = new();
+        public virtual List<Article> Articles { get; set; } = new();
 
         public void Update(Author author)
         {

@@ -12,10 +12,10 @@ namespace MLinfo_v1._0.Models.DatabasedModels
         [Column("ReferenceId")]
         public int ID { get; set; }
 
-        [DisplayName("Authors' names in correct order in English")]
+        [DisplayName("Authors English")]
         public string? AuthorsE { get; set; }
 
-        [DisplayName("Authors' names in correct order in Russian")]
+        [DisplayName("Authors in Russian")]
         public string? AuthorsR { get; set; }
 
         [Column("ArticleE")]
@@ -65,11 +65,11 @@ namespace MLinfo_v1._0.Models.DatabasedModels
         public string? PdfFile { get; set; }
 
         [ValidateNever]
-        public virtual List<Author>? Authors { get; set; } = new();
+        public virtual List<Author> Authors { get; set; } = new();
         [ValidateNever]
-        public virtual List<Keyword>? Keywords { get; set; } = new();
+        public virtual List<Keyword> Keywords { get; set; } = new();
         [ValidateNever]
-        public virtual List<MLMethod>? Methods { get; set; } = new();
+        public virtual List<MLMethod> Methods { get; set; } = new();
 
         public void Update(Article article)
         {
