@@ -421,15 +421,12 @@ references:
   commentId: T:MLinfo_v1._0.Controllers.HomeController
   fullName: MLinfo_v1._0.Controllers.HomeController
   nameWithType: HomeController
-- uid: MLinfo_v1._0.Controllers.HomeController.#ctor(ILogger{MLinfo_v1._0.Controllers.HomeController})
-  name: HomeController(ILogger<HomeController>)
-  href: api/MLinfo_v1._0.Controllers.HomeController.html#MLinfo_v1__0_Controllers_HomeController__ctor_ILogger_MLinfo_v1__0_Controllers_HomeController__
-  commentId: M:MLinfo_v1._0.Controllers.HomeController.#ctor(ILogger{MLinfo_v1._0.Controllers.HomeController})
-  name.vb: HomeController(ILogger(Of HomeController))
-  fullName: MLinfo_v1._0.Controllers.HomeController.HomeController(ILogger<MLinfo_v1._0.Controllers.HomeController>)
-  fullName.vb: MLinfo_v1._0.Controllers.HomeController.HomeController(ILogger(Of MLinfo_v1._0.Controllers.HomeController))
-  nameWithType: HomeController.HomeController(ILogger<HomeController>)
-  nameWithType.vb: HomeController.HomeController(ILogger(Of HomeController))
+- uid: MLinfo_v1._0.Controllers.HomeController.#ctor(ApplicationDBContext)
+  name: HomeController(ApplicationDBContext)
+  href: api/MLinfo_v1._0.Controllers.HomeController.html#MLinfo_v1__0_Controllers_HomeController__ctor_ApplicationDBContext_
+  commentId: M:MLinfo_v1._0.Controllers.HomeController.#ctor(ApplicationDBContext)
+  fullName: MLinfo_v1._0.Controllers.HomeController.HomeController(ApplicationDBContext)
+  nameWithType: HomeController.HomeController(ApplicationDBContext)
 - uid: MLinfo_v1._0.Controllers.HomeController.#ctor*
   name: HomeController
   href: api/MLinfo_v1._0.Controllers.HomeController.html#MLinfo_v1__0_Controllers_HomeController__ctor_
@@ -450,12 +447,12 @@ references:
   isSpec: "True"
   fullName: MLinfo_v1._0.Controllers.HomeController.Error
   nameWithType: HomeController.Error
-- uid: MLinfo_v1._0.Controllers.HomeController.Index
-  name: Index()
-  href: api/MLinfo_v1._0.Controllers.HomeController.html#MLinfo_v1__0_Controllers_HomeController_Index
-  commentId: M:MLinfo_v1._0.Controllers.HomeController.Index
-  fullName: MLinfo_v1._0.Controllers.HomeController.Index()
-  nameWithType: HomeController.Index()
+- uid: MLinfo_v1._0.Controllers.HomeController.Index(System.String,System.String)
+  name: Index(String, String)
+  href: api/MLinfo_v1._0.Controllers.HomeController.html#MLinfo_v1__0_Controllers_HomeController_Index_System_String_System_String_
+  commentId: M:MLinfo_v1._0.Controllers.HomeController.Index(System.String,System.String)
+  fullName: MLinfo_v1._0.Controllers.HomeController.Index(System.String, System.String)
+  nameWithType: HomeController.Index(String, String)
 - uid: MLinfo_v1._0.Controllers.HomeController.Index*
   name: Index
   href: api/MLinfo_v1._0.Controllers.HomeController.html#MLinfo_v1__0_Controllers_HomeController_Index_
